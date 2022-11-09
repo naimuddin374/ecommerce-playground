@@ -1,13 +1,16 @@
 import Layout from '../components/layout'
+import { StoreProvider } from 'easy-peasy'
+import store from '../store'
 import '../styles/globals.css'
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <StoreProvider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </StoreProvider>
   )
 }
-
 export default MyApp

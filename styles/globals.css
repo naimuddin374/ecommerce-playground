@@ -2,5 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: '#FFFFFF'
+  background-color: "#FFFFFF";
 }
+@import "./navbar";

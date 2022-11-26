@@ -1,7 +1,8 @@
 import Layout from '../components/layout'
 import { StoreProvider } from 'easy-peasy'
 import store from '../store'
-import '../styles/globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/style.scss'
 
 
 function MyApp({ Component, pageProps }) {

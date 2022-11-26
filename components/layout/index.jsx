@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import Footer from "./footer";
 import Header from "./header";
 
@@ -6,11 +5,11 @@ import Header from "./header";
 
 const Layout = (props) => {
     return (
-        <Container maxWidth="xl" sx={{ pt: 3 }}>
+        <div className="container">
             <Header />
             {props.children}
             <Footer />
-        </Container>
+        </div>
     )
 }
 export default Layout;

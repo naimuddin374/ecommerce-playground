@@ -1,41 +1,23 @@
-import { Box, TextField, InputAdornment, Button } from "@mui/material";
-import SearchIcon from '@mui/icons-material/Search';
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Form, Input, Button } from 'reactstrap'
 
 
 
 const SearchBar = () => {
     return (
-        <Box>
-            <TextField
-                InputProps={{
-                    startAdornment: (
-                        <InputAdornment position="start" sx={{ml: 2}}>
-                            <SearchIcon />
-                        </InputAdornment>
-                    ),
-                }}
-                variant="standard"
-                size="medium"
+        <Form id="top-search" className='d-flex justify-content-between'>
+            <div className='search-input-icon'>
+                <FontAwesomeIcon icon={faSearch} />
+            </div>
+            <Input
+                className='shadow-none'
+                type="text"
                 placeholder='Search for Products'
-                sx={{ width: "750px", border: "1px solid #3C1FF4" }}
-                inputProps={{
-                    style: {
-                        height: "40px",
-                    },
-                }}
             />
-            <Button
-                sx={{
-                    backgroundColor: "#3C1FF4",
-                    color: "#fff",
-                    borderRadius: 0,
-                    px: 5,
-                    lineHeight: "40px"
-                }}
-            >Search</Button>
-        </Box>
+            <Button type="submit">Search</Button>
+        </Form>
     )
 }
 export default SearchBar;

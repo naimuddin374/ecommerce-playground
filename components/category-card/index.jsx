@@ -1,4 +1,3 @@
-import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 
@@ -21,12 +20,12 @@ const CategoryCard = ({ title, image, url }) => {
                 }
             }}
         >
-            <Box>
+            <div>
                 <img src={image} alt={title} width={200} />
-            </Box>
-            <Typography sx={{ fontSize: "20px" }}>
+            </div>
+            <p sx={{ fontSize: "20px" }}>
                 {title}
-            </Typography>
+            </p>
         </Link>
     )
 }

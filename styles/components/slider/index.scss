@@ -1,0 +1,101 @@
+
+
+#homeSlider{
+    background-color: #F9F3F0;
+    .buyNow{
+        width: 184px;
+        height: 64px;
+        font-weight: 400;
+        font-size: 25px;
+        border: none;
+        background: white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        border-radius: 5px;
+    }
+    
+}
+.slick{
+    position: relative;
+}
+.circleArea{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.slick h1{
+    font-size: 55px;
+}
+
+.circle{
+    position: relative;
+   height: 140px;
+   width: 140px;
+    background: #3C1FF4;
+    border-radius: 100%;
+}
+.circle h4{
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.homeStartIcon{
+    color:  #FFB000;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 21px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.slick-next:before {
+    content: '→';
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 53px;
+    line-height: 1;
+    opacity: 100.75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 100px !important;
+}
+
+.slick-prev {
+    left: 100px !important;
+}
+.slick-prev, .slick-next {
+    font-size: 30px;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+}

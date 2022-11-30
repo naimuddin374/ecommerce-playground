@@ -4,3 +4,30 @@ body {
   margin: 0;
   background-color: '#FFFFFF'
 }
+
+#Heading{
+  p{
+    color: #3C1FF4;
+    font-size: 21px;
+    font-weight: 400;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+.starIcon{
+  color: #FFB000;
+}
+#defaltButton{
+  button{
+    width: 157px;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #3C1FF4;
+    border-radius: 5px;
+    color: white;
+  }
+}

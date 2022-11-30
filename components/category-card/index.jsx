@@ -1,32 +1,18 @@
-import Link from "next/link";
-import React from "react";
 
+import Link from 'next/link'
+import Image from 'next/image'
 
-
-
-const CategoryCard = ({ title, image, url }) => {
-    return (
-        <Link
-            href={url}
-            style={{
-                color: "#000",
-                textDecoration: "none",
-                fontSize: "20px",
-                textAlign: "center",
-                padding: "10px",
-                "&:hover": {
-                    backgroundColor: "#3C1FF4",
-                    color: "#fff",
-                }
-            }}
-        >
-            <div>
-                <img src={image} alt={title} width={200} />
-            </div>
-            <p sx={{ fontSize: "20px" }}>
-                {title}
-            </p>
+function Categories (props){
+    return( 
+            
+        <Link className="p-4 text-decoration-none" id="categoryCard" href={`#`}>
+            
+            <Image className="categoryCardImg" src={props.Img}/>
+            <h1>{props.name}</h1>
+         
         </Link>
+
+        
     )
 }
-export default CategoryCard;
+export default Categories

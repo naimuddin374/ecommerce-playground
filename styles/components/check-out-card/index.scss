@@ -1,0 +1,30 @@
+
+
+
+#checkOutCard{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    .CheckOutCardImg{
+        width: 76px;
+        height: 61.52px;
+    }
+    h4{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    P{
+        color: #3C1FF4;
+        font-weight: 300;
+            font-size: 16px;
+    }
+    button{
+        width: 326px;
+        height: 36px;
+        background-color: #3C1FF4;
+        border-radius: 3px  ;
+        border: none;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}

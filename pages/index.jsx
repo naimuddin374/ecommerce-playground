@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
 
+import { Fragment } from 'react'
 import categoryCard from './api/categoryCard'
 import trendingProductCard from './api/trending-product-card'
 
@@ -14,7 +13,7 @@ import BestProducts from '../components/best-products'
 
 export default function Home() {
   return (
-      <div>
+      <Fragment>
           <Slidr/>
           <div className="py-5">
               <div className='container'>
@@ -51,6 +50,6 @@ export default function Home() {
           <div className="py-5">
               <SocialService/>
           </div>
-    </div>
+    </Fragment>
   )
 }

@@ -1,11 +1,11 @@
 
-
+import { Fragment } from "react"
 import CheckOutForm from "../../components/check-out-form"
 import CheckOutCard from "../../components/chaeck-out-card"
 
 const CheckPage = ()=>{
     return(
-        <div >
+        <Fragment >
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 col-md-6 col-12">
@@ -16,8 +16,7 @@ const CheckPage = ()=>{
                     </div>
                 </div>
             </div>
-            
-        </div>
+        </Fragment>
     )
 }
 export default CheckPage    

@@ -1,7 +1,4 @@
 
-
-
-
 import CardList from "../../components/card-list"
 import OrderSummary from "../../components/order-summary"
 
@@ -16,7 +13,6 @@ const CardPage = () =>{
                     <OrderSummary/> 
                 </div>
             </div>
-            
         </div>
     )
 }

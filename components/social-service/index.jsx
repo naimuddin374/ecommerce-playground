@@ -1,10 +1,9 @@
+
 import Image from "next/image"
-
-
-    import SocialServiceImgA from "../../assets/img/BasicSel.png"
-    import SocialServiceImgB from "../../assets/img/IconFic.png"
-    import SocialServiceImgC from "../../assets/img/LeyaK.png"
-    import SocialServiceImgD from "../../assets/img/Meta.png"
+import SocialServiceImgA from "../../assets/img/BasicSel.png"
+import SocialServiceImgB from "../../assets/img/IconFic.png"
+import SocialServiceImgC from "../../assets/img/LeyaK.png"
+import SocialServiceImgD from "../../assets/img/Meta.png"
 
     const SocialService = () =>{
         return(
@@ -21,8 +20,7 @@ import Image from "next/image"
                     </div>
                     <div className="col-3 imgAera">
                         <a href="#"><Image className="SocialServiceImg" src={SocialServiceImgD} /></a>
-                    </div>
-                    
+                    </div>       
                 </div>
             </div>
         )

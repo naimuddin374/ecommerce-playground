@@ -2,14 +2,13 @@
 import Image from "next/image";
 import Logo from "../../../assets/img/Shoptronics (1).png"
 
-
 const Footer = () => {
     return (
         <div className="footer py-5" id="footer">
             <div className="container">
                 <div className="row">
                     <div className="col-3">
-                        <Image className="" src={Logo} />
+                        <Image src={Logo} />
                         <p className="mb-0 pt-2">Elegant pink origami design three dimensional view and decoration co-exist. Great for adding a decorative touch to any room’s decor.</p>
                     </div>
                     <div className="col-3">

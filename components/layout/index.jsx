@@ -1,15 +1,15 @@
+
+import { Fragment } from "react";
 import Footer from "./footer";
 import Header from "./header";
 
-
-
 const Layout = (props) => {
     return (
-        <div className="">
+        <Fragment>
             <Header />
             {props.children}
             <Footer />
-        </div>
+        </Fragment>
     )
 }
 export default Layout;

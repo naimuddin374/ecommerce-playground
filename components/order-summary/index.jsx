@@ -4,7 +4,7 @@
 
 const OrderSummary = ()=>{
     return(
-        <div className="" id="OrderSummary">
+        <div id="OrderSummary">
             <div className="py-4">
                 <h4 className="text-center">Order Summar</h4>
             </div>
@@ -24,7 +24,7 @@ const OrderSummary = ()=>{
                     <strong>$828</strong>
                 </div>
                 <div className="text-center pt-4">
-                    <button className="">Proceed to cheackout</button>
+                    <button>Proceed to cheackout</button>
                 </div>
             </div>
         </div>

@@ -4,8 +4,8 @@ import BannarImg from "../../assets/img/poster-03 1.png"
 
 const Bannar = () =>{
     return(
-        <div className="" id="homeBannar">
-            <div className="row  d-flex align-items-center ">
+        <div id="homeBannar">
+            <div className="row d-flex align-items-center ">
                 <div className="col-6 ">
                     <p className="mb-0">Enhance Your Music Experience</p>
                     <h1>Enhance Your Music Experience</h1>

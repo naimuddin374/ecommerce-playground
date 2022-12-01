@@ -1,8 +1,4 @@
 
-
-
-
-
 const Button = (props) =>{
     return(
         <div id="defaltButton">

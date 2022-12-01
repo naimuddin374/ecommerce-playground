@@ -1,11 +1,10 @@
+
 import Image from 'next/image';
 import Logo from '../../../assets/img/Shoptronics.svg'
 import Link from 'next/link'
 import SearchBar from './search-bar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
-
 
 const TopHeader = () => {
     return (

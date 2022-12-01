@@ -1,14 +1,9 @@
-// import Button from 'next/button';
-import slider from '../../pages/api/slider/slider';
+
 import Image from 'next/image';
-import { Button } from 'reactstrap';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-
 import sliderImgA from "../../assets/img/banner-mockup 1.png"
-
-
 
 function Slidr() {
   const settings = {
@@ -33,8 +28,7 @@ function Slidr() {
                   <div>
                   <button className="buyNow">Buy Now</button>
                   </div>
-                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">
-                    
+                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">   
                   </div>
                 </div>
               </div>
@@ -59,8 +53,7 @@ function Slidr() {
                   <div>
                   <button className="buyNow">Buy Now</button>
                   </div>
-                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">
-                    
+                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">  
                   </div>
                 </div>
               </div>
@@ -85,8 +78,7 @@ function Slidr() {
                   <div>
                   <button className="buyNow">Buy Now</button>
                   </div>
-                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">
-                    
+                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">     
                   </div>
                 </div>
               </div>

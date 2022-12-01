@@ -1,9 +1,6 @@
 
-
-
 import Image from "next/image"
 import CheckOutCardImg from "../../assets/img/product-39 1.png"
-
 
 const CheckOutCard = ()=>{
     return(

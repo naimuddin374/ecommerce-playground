@@ -1,6 +1,6 @@
 
 import Image from 'next/image'
-import Logo from "../../.././assets/img/Shoptronics.svg"
+
 const Footer = () => {
  return(
     <div>

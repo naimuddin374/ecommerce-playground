@@ -25,7 +25,7 @@ const FilterBar = () => {
                 <div className="d-flex align-items-center ps-3">
                     <p className="mb-0 ps-2">View:</p>
                     <FontAwesomeIcon className="mx-2" icon={faAngleLeft} />
-                    <FontAwesomeIcon className="" icon={faAngleRight} />
+                    <FontAwesomeIcon icon={faAngleRight} />
 
                 </div>
             </div>

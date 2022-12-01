@@ -1,5 +1,5 @@
 import FilterBar from "../../components/filter-bar"
-import ShopLink from "./shop-link"
+import ShopLink from "../../components/shop-link"
 import ProductList from './../../components/product-list';
 import Pagination from "../../components/pagination"
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'

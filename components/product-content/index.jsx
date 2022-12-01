@@ -22,10 +22,10 @@ const ProductContent = (props, product) => {
                     </div>
                     <div className="pdt-info">
                         <h4>Flexible WareLess Head Phone</h4>
-                        <p className=''>Product Id:<span className="text-muted">12af</span></p>
+                        <p>Product Id:<span className="text-muted">12af</span></p>
                         <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</p>
-                        <p className=''>Brand:<span className="text-muted">HP</span></p>
-                        <h5 className=''>Quick Overview</h5>
+                        <p>Brand:<span className="text-muted">HP</span></p>
+                        <h5>Quick Overview</h5>
                         <div>
                             <ul >
                                 <li className="m-0">RAM - 16GB</li>

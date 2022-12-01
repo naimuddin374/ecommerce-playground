@@ -1,8 +1,14 @@
 @import './layout';
 @import './star-rating/';
-@import './shop';
 @import './pagination';
 @import './product-contect';
 @import './related-product';
 @import './section-title';
-@import './product-gallery'
+@import './product-gallery';
+
+// Style For Shop Page 
+@import './filter-bar';
+@import './product-list';
+@import './shop-link';
+@import './shop-bar';
+@import './pagination';

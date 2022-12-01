@@ -182,7 +182,7 @@ const ShopBar = () => {
                     {/* Rating Range Start */}
                     <div className="Rating mt-4">
                         <h4>Rating</h4>
-                        <div className="">
+                        <div>
                             <StarRating rating={''} />
                             <StarRating rating={'And Up'} />
                             <StarRating rating={'And Up'} />

@@ -1,14 +1,23 @@
-/* start pajination */
-.pajination a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+/* start pagination */
+
+#pagination {
+    .pagination-body {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: blue;
+            color: white;
+            border-radius: 2px;
+        }
+    }
+
 }
 
-.pajination a:hover {
-    background-color: blue;
-    color: white;
-    border-radius: 2px;
-}
-
-/* end pajination */
+/* end pagination */

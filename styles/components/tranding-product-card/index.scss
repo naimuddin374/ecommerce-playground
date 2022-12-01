@@ -1,0 +1,49 @@
+
+#trandingProductCard{
+    position: relative;
+    width: calc(100% / 5);
+    display: inline-block;
+    border: 1px solid white;
+    .TrandingProductCardImg{
+        width: 166px;
+        height: 134px;
+    }
+    .ffsf{
+        background-color: #F6F7FB;
+        padding: 10px;
+    }
+    img{
+        width: 206px;
+        height: 166px;
+    }
+    .hoverArea{
+        align-items: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+    }
+    .icon{
+        background-color: white;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    button{
+        font-size: 13px;
+        font-size: 400;
+        background-color: #3C1FF4;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        width: 97px;
+        height: 33px;
+    }
+}
+#trandingProductCard:hover .hoverArea{
+    opacity: 1;
+    transition: all 0.3s;
+}
+

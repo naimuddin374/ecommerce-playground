@@ -5,7 +5,7 @@ import Header from "./header";
 
 const Layout = (props) => {
     return (
-        <div className="container">
+        <div className="">
             <Header />
             {props.children}
             <Footer />

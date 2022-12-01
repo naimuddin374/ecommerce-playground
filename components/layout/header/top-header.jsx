@@ -8,7 +8,7 @@ import {faUser, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icon
 
 const TopHeader = () => {
     return (
-        <div id='top-header' className='d-flex justify-content-between'>
+        <div id='top-header' className='d-flex justify-content-between container'>
             <Link href={'/'}>
                 <Image src={Logo} alt="Logo" />
             </Link>

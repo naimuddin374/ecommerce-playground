@@ -1,11 +1,10 @@
+
 import Image from 'next/image';
 import Logo from '../../../assets/img/Shoptronics.svg'
 import Link from 'next/link'
 import SearchBar from './search-bar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faUser, faMagnifyingGlass, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
-
+import {faUser, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const TopHeader = () => {
     return (
@@ -14,7 +13,7 @@ const TopHeader = () => {
                 <Image src={Logo} alt="Logo" />
             </Link>
             <SearchBar />
-            <div>
+            <div className="text-end">
                 <FontAwesomeIcon icon={faUser} />
                 <FontAwesomeIcon icon={faHeart} />
                 <FontAwesomeIcon icon={faCartShopping} />

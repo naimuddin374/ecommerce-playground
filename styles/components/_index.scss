@@ -1,13 +1,13 @@
 @import './layout';
-@import './product-contect';
-@import './related-product';
-@import './section-title';
-@import './product-gallery';
+@import "../components/category-card";
+@import "../components/slider";
+@import "../components/tranding-product-card";
+@import "../components/bannar";
+@import "../components/Social-service";
+@import "../components/best-products";
+@import "../components/card-list";
+@import "../components/order-summary";
+@import "../components/Check-out-form";
+@import "../components/check-out-card"
 
-// Style For Shop Page 
-@import './filter-bar';
-@import './product-list';
-@import './shop-link';
-@import './shop-bar';
-@import './pagination';
-@import './star-rating';
+

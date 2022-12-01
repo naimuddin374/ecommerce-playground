@@ -1,0 +1,32 @@
+
+
+
+
+
+#CardList{
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+    .CardListImg{
+        width: 103px;
+        height: 80px;
+    }
+    button{
+        width: 148px;
+        height: 36px;
+        background-color: rgba(217, 217, 217, 0.35);
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+
+        border: none;
+    }
+    .cardListIcon{
+        color: red;
+        border: 1px solid red;
+        border-radius: 50px;
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+    }
+}

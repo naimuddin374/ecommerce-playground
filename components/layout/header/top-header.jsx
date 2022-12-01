@@ -9,7 +9,7 @@ import { faCoffee, faUser, faMagnifyingGlass, faHeart, faCartShopping } from '@f
 
 const TopHeader = () => {
     return (
-        <div id='top-header' className='d-flex justify-content-between'>
+        <div id='top-header' className='d-flex justify-content-between container'>
             <Link href={'/'}>
                 <Image src={Logo} alt="Logo" />
             </Link>

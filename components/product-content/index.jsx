@@ -1,12 +1,13 @@
 import StarRating from '../star-rating/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShareNodes, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import ProductGallery from '../product-gallery';
 const ProductContent = (props, product) => {
     return (
         <div id="pdt-content">
             <div className="row">
                 <div className="col-7">
-                    sadf
+                    <ProductGallery pdtText={`N.B. Image may differ with actual product's layout, color, size & dimension. No claim will be accepted for image mismatch.`} />
                 </div>
                 <div className="col-5 ">
                     <div className="d-flex justify-content-between">

@@ -1,7 +1,7 @@
 import { Input, Label } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faStar, } from '@fortawesome/free-solid-svg-icons'
-import StarRating from '../../components/star-rating'
+import StarRating from '../star-rating'
 
 const ShopBar = () => {
     return (

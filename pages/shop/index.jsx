@@ -1,9 +1,9 @@
-import FilterBar from "./filter-bar"
-import ShopBar from "./shop-bar"
+import FilterBar from "../../components/filter-bar"
 import ShopLink from "./shop-link"
+import ProductList from './../../components/product-list';
 import Pagination from "../../components/pagination"
-import ProductList from "./product-list"
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import ShopBar from './../../components/shop-bar';
 
 const Shop = () => {
     return (

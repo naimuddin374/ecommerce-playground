@@ -5,6 +5,7 @@ import { Label } from "reactstrap"
 
 const FilterBar = () => {
     return (
+
         <div id="filter-bar" className="d-flex justify-content-between px-3 py-2 ">
             <div className="left-side p-2">
                 <a href="#">1</a>

@@ -54,11 +54,3 @@ const ProductContent = (props, product) => {
 }
 
 export default ProductContent
-
-
-// Quick Overview
-
-// RAM - 16GB
-// Processor Type - Apple M1 Chip
-// Graphics Memory - Shared
-// Display Size(Inch) - 13.3 

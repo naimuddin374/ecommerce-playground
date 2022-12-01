@@ -1,5 +1,5 @@
 import SectionTitle from "../section-title"
-import ProductList from './../../pages/shop/product-list';
+import ProductList from './../../components/product-list';
 
 
 const RelatedProduct = () => {

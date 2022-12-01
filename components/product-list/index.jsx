@@ -3,13 +3,13 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } fr
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import productImg from '../../assets/img/shop/product-list/product-38.png'
-import StarRating from '../../components/star-rating';
+import StarRating from '../star-rating';
 
 const ProductList = (props) => {
     return (
         <div id="product-list" className="my-3">
-            <div className="">
-                <div className="">
+            <div>
+                <div>
                     <Card>
                         <Image className="pdt-img align-items-center  w-100 h-auto" src={productImg} />
                         <CardBody>
@@ -36,30 +36,3 @@ const ProductList = (props) => {
 }
 
 export default ProductList
-
-
-
-// <div className="col-4">
-//     <div className="BestProducts card" id="BestProducts">
-//         <div className="imgArea">
-//             <Image src={BestProductsImgA} />
-//         </div>
-//         <div className="card-body pt-3">
-//             <p className="mb-0">Head Phone</p>
-//             <h3>Smart Digital Watch </h3>
-//             <div className="d-flex pb-3">
-//                 <div className=" pe-4">
-//                     <strong>$50.76</strong>
-//                     <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
-//                 </div>
-//                 <StarReating reatingRang="(96%)" />
-//             </div>
-//             <div className='buttonArea'>
-//                 <div className="d-flex justify-content-center align-items-center ">
-//                     <FontAwesomeIcon icon={faCartShopping} />
-//                     <p className="mb-0">Add To Card</p>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </div>

@@ -1,4 +1,18 @@
 @import './layout';
+
+@import './product-contect';
+@import './related-product';
+@import './section-title';
+@import './product-gallery';
+@import "./getting/getting.scss";
+// Style For Shop Page 
+@import './filter-bar';
+@import './product-list';
+@import './shop-link';
+@import './shop-bar';
+@import './pagination';
+@import './star-rating';
+
 @import "../components/category-card";
 @import "../components/slider";
 @import "../components/tranding-product-card";
@@ -9,5 +23,6 @@
 @import "../components/order-summary";
 @import "../components/Check-out-form";
 @import "../components/check-out-card"
+
 
 

@@ -39,7 +39,17 @@
         background: #FFFFFF;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
         border-radius: 3px;
-        padding: 50px;
+        padding: 50px 64px 52px 58px;
+        .last{
+            background-color:white;
+            color: black;
+            border: 1px solid rgba(0, 0, 0, 0.20);
+          &:hover{
+            background-color:#3C1FF4;
+            color: white;
+            transition: all 0.5s;
+          }
+      }
     }
    
     .input-area{
@@ -60,6 +70,14 @@
         line-height: 36px;
         background:red;
       } 
+
+      
+
+      .last:hover{
+        background-color: #3C1FF4;
+        color: #FFFFFF;
+        transition: all 0.6s;
+      }
     }
 }
 

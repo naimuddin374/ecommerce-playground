@@ -8,8 +8,8 @@ const SingIn = () => {
         <div id="singin">
             <Breadcrumb />
             <div className="container">
-                <div className="signup-box py-4  mx-auto"> <h5 className="text-center">Sing in</h5>
-                    <hr />
+                <div className="singup-box py-4  mx-auto"> <h5 className="text-center">Sing in</h5>
+              
                     <div className="py-3 from-area">
                         <div className="input-area">
                             <label className="mb-1" htmlFor="">User Name Or Email</label>
@@ -27,19 +27,19 @@ const SingIn = () => {
                                     <h5 className="ms-2">Remember Me</h5>
                                 </div>
                             </div>
-                            <div className="Forgotten">
-                                <h5>Forgotten password?</h5>
-                            </div>
-                        </div>
-                        <Link href="#">
-                            <div className="pt-3">
-                                <button className="last">
-                                    Sing in
-                                </button>
-                            </div>
 
-                        </Link>
-                        <div className="account pt-3">
+                            <h5 className="forgotten">Forgotten password?</h5>
+
+                        </div>
+
+                        <div className="pt-5">
+                            <Link href="#">
+                                <button className="last">Sing in</button>
+                            </Link>
+                        </div>
+
+                        
+                        <div className="account pt-5">
                             <h4>Don't have an account? </h4>
                         </div>
                         <Link href="singup">

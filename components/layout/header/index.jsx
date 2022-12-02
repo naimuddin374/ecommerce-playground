@@ -6,7 +6,7 @@ import TopHeader from "./top-header";
 const Header = () => {
     return (
         <Fragment>
-            <div className="container">  
+            <div className="container ">  
                 <TopHeader />
                 <Navbar />
             </div>

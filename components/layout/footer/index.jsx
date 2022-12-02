@@ -1,7 +1,3 @@
-
-
-import Image from 'next/image'
-
 import Image from "next/image";
 import Logo from "../../../assets/img/Shoptronics (1).png"
 

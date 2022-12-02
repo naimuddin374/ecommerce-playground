@@ -9,7 +9,7 @@ const Shop = () => {
     return (
         <div className=''>
             <ShopLink
-                link={`HOME`}
+                mainLink={`HOME`}
                 subLink={`SHOP`}
                 icon={faArrowRight}
             />

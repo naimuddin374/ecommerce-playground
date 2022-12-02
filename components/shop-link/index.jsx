@@ -8,10 +8,10 @@ const ShopLink = (props) => {
             <div className="container">
                 <div className="shop-route">
                     {/* <Link> HOME </Link> */}
-                    <a href="#">{props.link}</a>
+                    <a href="#">{props.mainLink}</a>
                     <FontAwesomeIcon icon={props.icon} className="FontAwesomeIcon px-2" />
                     <a href="#">{props.subLink}</a>
-
+                    <p className="h4 text-light mt-5">{props.title}</p>
                 </div>
             </div>
         </div>

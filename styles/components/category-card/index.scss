@@ -1,0 +1,26 @@
+
+#categoryCard{
+    width: calc(100% / 5);  
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    .categoryCardImg{
+        width: 103px;
+        height: 119px;
+    }
+    h1{
+        font-size: 30px;
+        color: black;
+    }
+}
+#categoryCard:hover{
+    background-color: #3C1FF4;
+    transition: all 0.5s;
+    h1{
+        color: white;
+    }
+}
+#categoryCard:hover .categoryCardImg{
+    filter: invert(1);
+}

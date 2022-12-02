@@ -1,10 +1,10 @@
 import Breadcrumb from "../../components/breadcrumb";
-import Link  from "next/link";
+import Link from "next/link";
 
 
-const Singup = () => {
+const SingUp = () => {
+
   return (
-
     <div id="singup">
       <Breadcrumb />
       <div className="container">
@@ -30,16 +30,15 @@ const Singup = () => {
           </div>
           <div className="text">
             <p>Your personal data will be used to support your experience throughout this<br></br> website, to manage access to your account, and for other purposes described in<br></br> our privacy policy.</p>
-          </div> 
-          <Link href="singin">     <button className="sing">Sing Up</button>
-
-
+          </div>
+          <Link href="singin">
+            <button className="sing">Sing Up</button>
           </Link>
-     
+
         </div>
 
       </div>
     </div>
   )
 }
-export default Singup;
+export default SingUp;

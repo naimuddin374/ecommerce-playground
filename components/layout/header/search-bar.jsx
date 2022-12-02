@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Form, Input, Button } from 'reactstrap'
 
-
-
 const SearchBar = () => {
     return (
         <Form id="top-search" className='d-flex justify-content-between'>

@@ -4,7 +4,7 @@ import CheckOutCardImg from "../../assets/img/product-39 1.png"
 
 const CheckOutCard = ()=>{
     return(
-        <div className="py-4" id="checkOutCard">
+        <div className="py-4 mb-5" id="checkOutCard">
             <h4 className="text-center">Your order</h4>
             <hr/>
             <div className="d-flex p-2">

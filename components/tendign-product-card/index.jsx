@@ -13,7 +13,7 @@ const TrandingProductCard = (props) =>{
             <div className="card-body pt-3">
                 <StarReating reatingRang="95%"/>
                 <p className="mb-0 py-2">{props.title}</p>
-                <div>
+                <div className="d-flex justify-content-between">
                     <strong>{props.newPrice}</strong>
                     <strong className="ps-5 text-muted text-decoration-line-through">{props.oldPrice}</strong>
                 </div>

@@ -1,9 +1,10 @@
-
+import Link from 'next/link';
 import Image from 'next/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import sliderImgA from "../../assets/img/banner-mockup 1.png"
+import StarReating from '../global/starReating';
 
 function Slidr() {
   const settings = {
@@ -25,8 +26,15 @@ function Slidr() {
                 <p className="mb-0"> Hot Deal In This Week</p>
                 <h1>Intelectial Digital Computer</h1>
                 <div className="pt-3 d-flex align-items-center">
-                  <div>
-                  <button className="buyNow">Buy Now</button>
+                  <div className='d-flex align-items-center'>
+                    <Link href="checkout">
+                      <button className="buyNow">Buy Now</button>
+                    </Link>
+                    
+                    <div className='flot-left ps-4 align-items-center'>
+                      <StarReating/>
+                      <p className='mb-0'>100 Revieue</p>
+                    </div>
                   </div>
                   <div className="d-flex ps-1 ps-md-4 ps-lg-4">   
                   </div>
@@ -50,8 +58,14 @@ function Slidr() {
                 <p className="mb-0"> Hot Deal In This Week</p>
                 <h1>Intelectial Digital Computer</h1>
                 <div className="pt-3 d-flex align-items-center">
-                  <div>
-                  <button className="buyNow">Buy Now</button>
+                  <div className='d-flex align-items-center'>
+                    <Link href="checkout">
+                      <button className="buyNow">Buy Now</button>
+                    </Link>
+                    <div className='flot-left ps-4 align-items-center'>
+                      <StarReating/>
+                      <p className='mb-0'>100 Revieue</p>
+                    </div>
                   </div>
                   <div className="d-flex ps-1 ps-md-4 ps-lg-4">  
                   </div>
@@ -75,8 +89,14 @@ function Slidr() {
                 <p className="mb-0"> Hot Deal In This Week</p>
                 <h1>Intelectial Digital Computer</h1>
                 <div className="pt-3 d-flex align-items-center">
-                  <div>
-                  <button className="buyNow">Buy Now</button>
+                  <div className='d-flex align-items-center'>
+                   <Link href="checkout">
+                      <button className="buyNow">Buy Now</button>
+                    </Link>
+                    <div className='flot-left ps-4 align-items-center'>
+                      <StarReating/>
+                      <p className='mb-0'>100 Revieue</p>
+                    </div>
                   </div>
                   <div className="d-flex ps-1 ps-md-4 ps-lg-4">     
                   </div>

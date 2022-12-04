@@ -9,7 +9,7 @@ export default [
     {
         id: 1,
         img: CategotyCardImgA,
-        name: "sohag",
+        name: "Mobile",
     },
     {
         id: 2,

@@ -10,14 +10,14 @@ export default [
     {
         id: 1,
         img: TrandingProductCardImgA,
-        title: "Smart Digital Watch",
+        title: "Smart Digital Head Phone",
         newPrice: "$29.99",
         oldPrice: "$34.43",
     },
     {
         id: 2,
         img: TrandingProductCardImgB,
-        title: "Smart Digital Watch",
+        title: "Smart Digital Laptop",
         newPrice: "$29.99",
         oldPrice: "$34.43",
     },

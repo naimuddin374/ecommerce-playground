@@ -7,7 +7,7 @@ const ModelManuItem = (props) => {
     return(
         <div id="modelManuItem" className="p-4">
             <Link  className="modelsLink" href="#"> 
-                <Image className="DropdownManuItemImg" src={props.img} />
+                <Image className="Model-manu-item-img" src={props.img} />
                 <h4 className="pt-3">{props.title}</h4>
             </Link>
         </div>

@@ -1,15 +1,16 @@
-import Breadcrumb from "../../components/breadcrumb";
+
 import Link from "next/link";
+import ShopLink from './../../components/shop-link/index';
 
 
-const SingUp = () => {
+const SignUp = () => {
 
   return (
-    <div id="singup">
-      <Breadcrumb />
+    <div id="signup">
+      <ShopLink />
       <div className="container">
-        <div className="singup-box  mx-auto">
-          <h5 className="">Sing Up</h5>
+        <div className="signup-box  mx-auto">
+          <h5 className="">Sign Up</h5>
           <div className="input-area  mt-3">
             <label className="mb-1" htmlFor="">First Name</label>
             <input type="text" className="container" />
@@ -33,7 +34,7 @@ const SingUp = () => {
           </div>
           <Link href="#">
             <div className="pt-3">
-              <button className="sing">Sing Up</button>
+              <button className="sign">Sign Up</button>
             </div>
 
           </Link>
@@ -42,11 +43,11 @@ const SingUp = () => {
           </div>
 
             <div className="pt-3">
-                <Link href="/singin"><button className="last">Sign in</button></Link>
+                <Link href="signin"><button className="last">Sign in</button></Link>
             </div>
         </div>
       </div>
     </div>
   )
 }
-export default SingUp;
+export default SignUp;

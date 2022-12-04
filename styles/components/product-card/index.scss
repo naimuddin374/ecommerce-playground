@@ -1,0 +1,13 @@
+@import './add-to-cart-button';
+@import './product-img';
+@import './product-title';
+
+#product-card {
+    .pdt-card {
+        border: none;
+
+        &:hover .button {
+            opacity: 1;
+        }
+    }
+}

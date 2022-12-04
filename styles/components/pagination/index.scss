@@ -4,6 +4,12 @@
     .pagination-body {
         display: flex;
         justify-content: space-between;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: rgba(0, 0, 0, 0.8);
 
         a {
             text-decoration: none;
@@ -11,10 +17,16 @@
             font-weight: bold;
         }
 
-        a:hover {
-            background-color: blue;
-            color: white;
-            border-radius: 2px;
+        .pagination-number {
+            a {
+                padding: 10px;
+            }
+
+            a:hover {
+                background-color: blue;
+                color: white;
+                border-radius: 2px;
+            }
         }
     }
 

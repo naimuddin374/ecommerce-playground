@@ -1,27 +1,17 @@
-import Image from "next/image"
-import Link from "next/link"
-import singlePdtImg from "../../assets/img/shop/product-list/product-38.png"
+
+
+import ImageList from "./image-list"
+import ProductImage from "./product-img"
 
 const ProductGallery = (props) => {
     return (
         <div id="product-gallery">
             <div className="row p-4">
                 <div className="col-3">
-                    <Link href="#">
-                        <Image className="sub- w-75 h-auto  p-3" src={singlePdtImg} />
-                    </Link>
-                    <Link href="#">
-                        <Image className="sub- w-75 h-auto  p-3" src={singlePdtImg} />
-                    </Link>
-                    <Link href="#">
-                        <Image className="sub- w-75 h-auto  p-3" src={singlePdtImg} />
-                    </Link>
-                    <Link href="#">
-                        <Image className="sub- w-75 h-auto  p-3" src={singlePdtImg} />
-                    </Link>
+                    <ImageList />
                 </div>
                 <div className="col-9">
-                    <Image className="main-pdt" src={singlePdtImg} />
+                    <ProductImage />
                 </div>
                 <p>{props.pdtText}</p>
             </div>

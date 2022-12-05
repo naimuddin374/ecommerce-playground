@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import {Card,CardImg,CardText,CardBody,CardTitle,CardSubtitle,Button} from 'reactstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import productImg from '../../assets/img/shop/product-list/product-38.png'
 import StarRating from '../star-rating';
 

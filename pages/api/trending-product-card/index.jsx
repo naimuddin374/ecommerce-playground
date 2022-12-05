@@ -1,10 +1,6 @@
-
-
 import TrandingProductCardImgA from "../../../assets/img/product-39 1.png"
 import TrandingProductCardImgB from "../../../assets/img/laptop (1).png"
 import TrandingProductCardImgC from "../../../assets/img/product-38.png"
-
-
 
 export default [
     {

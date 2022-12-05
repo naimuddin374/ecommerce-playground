@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import CheckOutCardImg from "../../assets/img/product-39 1.png"
 
@@ -8,7 +7,7 @@ const CheckOutCard = ()=>{
             <h4 className="text-center">Your order</h4>
             <hr/>
             <div className="d-flex p-2">
-                <Image className="CheckOutCardImg" src={CheckOutCardImg} />
+                <Image className="CheckOutCardImg" src={CheckOutCardImg}/>
                 <div className="ps-3">
                     <h5>Flexible WareLess Head Phone</h5>
                     <p>$399 x 2</p>
@@ -31,7 +30,7 @@ const CheckOutCard = ()=>{
                 </div>
            </div>
            <hr/>
-           <div className="d-flex justify-content-between px-4  ">
+           <div className="d-flex justify-content-between px-4">
                 <strong>Total</strong>   
                 <strong>$698</strong>   
             </div>
@@ -49,7 +48,6 @@ const CheckOutCard = ()=>{
            <div className="text-center pt-5">
                 <button>Please Order</button>
            </div>
-            
         </div>
     )
 }

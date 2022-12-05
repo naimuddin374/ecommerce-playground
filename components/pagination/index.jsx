@@ -1,5 +1,4 @@
 
-
 const Pagination = () => {
     return (
         <div id="pagination">

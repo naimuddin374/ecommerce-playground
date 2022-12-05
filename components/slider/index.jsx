@@ -14,7 +14,6 @@ function Slidr() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-
   };
   return ( 
     <div className="py-5" id="homeSlider">

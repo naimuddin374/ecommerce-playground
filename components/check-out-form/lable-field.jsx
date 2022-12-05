@@ -1,13 +1,6 @@
-
-
-
-
-
 const Lable = (props) =>{
     return(
-       <div>
-            <label className={props.className} for={props.for}>{props.name}</label>
-       </div>
+        <label className={props.className} for={props.for}>{props.name}</label>
     )
 }
 export default Lable

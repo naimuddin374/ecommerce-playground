@@ -1,15 +1,13 @@
-
-import { Fragment } from 'react'
+import {Fragment} from 'react'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBars, faAngleDown} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBars,faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import ModelManuItemImgA from "../../../../assets/img/product-40 1.png"
 import ModelManuItemImgB from "../../../../assets/img/widetv-300x300 1.png"
 import ModelManuItemImgC from "../../../../assets/img/WirelessSound-600x550 1.png"
 import ModelManuItemImgD from "../../../../assets/img/GoldPhone-1-300x300 1.png"
 import ModelManuItemImgE from "../../../../assets/img/prodcut6 1.png"
 import ModelManuItemImgF from "../../../../assets/img/product-40 1.png"
-
 import ModelManuItem from './model-manu-item'
 
 const BottomNavbar = () => {
@@ -27,37 +25,37 @@ const BottomNavbar = () => {
                             <div className='col-4 text-center'>
                                 <ModelManuItem
                                 img={ModelManuItemImgA}
-                                title={`Smart WatchSmart `}
+                                title={`Smart WatchSmart`}
                                 />
                             </div>
                             <div className='col-4 text-center'>
                                 <ModelManuItem
                                 img={ModelManuItemImgB}
-                                title={`Smart WatchSmart `}
+                                title={`Smart WatchSmart`}
                                 />
                             </div>
                             <div className='col-4 text-center'>
                                 <ModelManuItem
                                 img={ModelManuItemImgC}
-                                title={`Smart WatchSmart `}
+                                title={`Smart WatchSmart`}
                                 />
                             </div>
                             <div className='col-4 text-center'>
                                 <ModelManuItem
                                 img={ModelManuItemImgD}
-                                title={`Smart WatchSmart `}
+                                title={`Smart WatchSmart`}
                                 />
                             </div>
                             <div className='col-4 text-center'>
                                 <ModelManuItem
                                 img={ModelManuItemImgE}
-                                title={`Smart WatchSmart `}
+                                title={`Smart WatchSmart`}
                                 />
                             </div>
                             <div className='col-4 text-center'>
                                 <ModelManuItem
                                 img={ModelManuItemImgF}
-                                title={`Smart WatchSmart `}
+                                title={`Smart WatchSmart`}
                                 />
                             </div>
                         </div>
@@ -73,7 +71,6 @@ const BottomNavbar = () => {
                     </ul>
                 </div>
             </nav>
-           
         </Fragment>
     )
 }

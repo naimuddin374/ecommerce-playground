@@ -3,10 +3,9 @@ import RelatedProduct from "../../components/related-product"
 import ShopLink from './../../components/shop-link/index';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-
 const Product = () => {
     return (
-        <div className="product ">
+        <div className="product">
             <ShopLink
                 mainLink={`HOME`}
                 subLink={`SHOP`}
@@ -14,8 +13,8 @@ const Product = () => {
                 title={`Flexible WareLess Head Phone`}
             />
             <div className="container">
-                <ProductContent />
-                <RelatedProduct />
+                <ProductContent/>
+                <RelatedProduct/>
             </div>
         </div>
     )

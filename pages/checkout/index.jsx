@@ -1,5 +1,4 @@
-
-import { Fragment } from "react"
+import {Fragment} from "react"
 import CheckOutForm from "../../components/check-out-form"
 import CheckOutCard from "../../components/chaeck-out-card"
 import ShopLink from "../../components/shop-link"

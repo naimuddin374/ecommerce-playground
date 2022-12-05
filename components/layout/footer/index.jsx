@@ -2,7 +2,6 @@ import Image from "next/image";
 import Logo from "../../../assets/img/Shoptronics (1).png"
 import CopyRight from "./copy-right";
 
-
 const Footer = () => {
     return (
         <div className="footer py-5" id="footer">
@@ -19,13 +18,13 @@ const Footer = () => {
                                 <a href="#">Custom Service</a>
                             </li>
                             <li>
-                                <a href="#"> FAQs</a>
+                                <a href="#">FAQs</a>
                             </li>
                             <li>
-                                <a href="#"> Ordering Tracking</a>
+                                <a href="#">Ordering Tracking</a>
                             </li>
                             <li>
-                                <a href="#"> Contacts</a>
+                                <a href="#">Contacts</a>
                             </li>
                             <li>
                                 <a href="#">Events</a>
@@ -39,16 +38,16 @@ const Footer = () => {
                                 <a href="#">Delivery Information</a>
                             </li>
                             <li>
-                                <a href="#"> Privacy Policy</a>
+                                <a href="#">Privacy Policy</a>
                             </li>
                             <li>
                                 <a href="#">Discount</a>
                             </li>
                             <li>
-                                <a href="#"> Custom Service</a>
+                                <a href="#">Custom Service</a>
                             </li>
                             <li>
-                                <a href="#"> Terms & Condition</a>
+                                <a href="#">Terms & Condition</a>
                             </li>
                         </ul>
                     </div>
@@ -62,9 +61,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="pt-5"> 
-                <CopyRight/>
-                </div>
-                
+                    <CopyRight/>
+                </div> 
             </div>
         </div>
     )

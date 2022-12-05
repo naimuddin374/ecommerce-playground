@@ -1,12 +1,12 @@
-import { Input, Label } from 'reactstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faStar, } from '@fortawesome/free-solid-svg-icons'
+import {Input,Label} from 'reactstrap'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSearch,faStar,} from '@fortawesome/free-solid-svg-icons'
 import StarRating from '../star-rating'
 
 const ShopBar = () => {
     return (
         <div id="ShopBar" className="container-fluid">
-            <div className=" categories p-3">
+            <div className="categories p-3">
                 <h4 className="mt-2">Categories</h4>
                 <div>
                     {/* Accordion Start  */}
@@ -34,7 +34,6 @@ const ShopBar = () => {
                                         <p>Laptop <span>1</span></p>
                                         <p>Mother Board <span>1</span></p>
                                         <p>Others<span>..</span></p>
-
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +231,6 @@ const ShopBar = () => {
                         </div>
                     </div>
                     {/* Color-Family End  */}
-
                 </div>
             </div>
         </div>

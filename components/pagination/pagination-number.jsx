@@ -1,5 +1,5 @@
 
-const NumberPagination = () => {
+const PaginationNumber = () => {
     return (
         <div className="pagination-number">
             <a className="mx-1" href="#">1</a>
@@ -10,4 +10,4 @@ const NumberPagination = () => {
         </div>
     )
 }
-export default NumberPagination
+export default PaginationNumber

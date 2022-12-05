@@ -1,7 +1,8 @@
+import Link from "next/link"
 
 const NextButton = () => {
     return (
-        <div className="next"><a className="px-2" href="#">Next</a></div>
+        <div className="next"><Link className="px-2" href="#">Next</Link></div>
     )
 }
 export default NextButton

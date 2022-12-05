@@ -7,10 +7,9 @@ const Breadcrumb = (props) => {
         <div id="breadcrumb">
             <div className="container">
                 <div className="shop-route">
-                    {/* <Link> HOME </Link> */}
-                    <a href="#">{props.mainLink}</a>
+                    <Link href="./">{props.mainLink}</Link>
                     <FontAwesomeIcon icon={faAngleRight} className="FontAwesomeIcon px-2" />
-                    <a href="#">{props.subLink}</a>
+                    <Link href="./shop">{props.subLink}</Link>
                     <p className="h4 text-light mt-5">{props.title}</p>
                 </div>
             </div>

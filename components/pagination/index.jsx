@@ -1,5 +1,5 @@
 import NextButton from "./next-button"
-import NumberPagination from "./pagination-number"
+import PaginationNumber from "./pagination-number"
 import PrevButton from "./prev-button"
 
 
@@ -8,7 +8,7 @@ const Pagination = () => {
         <div id="pagination">
             <div className="pagination-body d-flex mt-4">
                 <PrevButton />
-                <NumberPagination />
+                <PaginationNumber />
                 <NextButton />
             </div>
         </div>

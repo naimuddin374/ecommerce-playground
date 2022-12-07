@@ -4,7 +4,7 @@ import ProductList from './../../components/product-list';
 const RelatedProduct = () => {
     return (
         <div id="related-product">
-            <SectionTitle subtitle={`Product`} title={`Related Product`}/>
+            <SectionTitle subHeading={`Product`} heading={`Related Product`} />
             <div className="row">
                 <div className="col-3">
                     <ProductList heading={'Smart Digital Watch'} title={'Head Phone'}/>

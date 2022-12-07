@@ -6,7 +6,7 @@ const Getting = () => {
             <Breadcrumb/>
             <div className="container">
                 <div className="getting-box">
-                    <h3 className="getting-heading">Thank you.Your order has been received.</h3>
+                    <h3 className="getting-heading">Thank you. Your order has been received.</h3>
 
                     <div className="row">
                         <div className="col-4">

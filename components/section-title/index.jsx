@@ -1,9 +1,11 @@
+import Heading from "./heading"
+import SubHeading from "./subheading"
 
 const SectionTitle = (props) => {
     return (
         <div id="section-title">
-            <p className="mb-0">{props.subtitle}</p>
-            <h1>{props.title}</h1>
+            <SubHeading subHeading={props.subHeading} />
+            <Heading heading={props.heading} />
         </div>
     )
 }

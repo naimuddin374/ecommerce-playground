@@ -2,6 +2,7 @@ import StarRating from '../star-rating/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShareNodes, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import ProductGallery from '../product-gallery';
+import { Input } from 'reactstrap';
 const ProductContent = (props, product) => {
     return (
         <div id="pdt-content">
@@ -10,10 +11,10 @@ const ProductContent = (props, product) => {
                     <ProductGallery pdtText={`N.B. Image may differ with actual product's layout, color, size & dimension. No claim will be accepted for image mismatch.`} />
                 </div>
                 <div className="col-5 ">
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex">
-                            <p className="me-2">Review:</p>
-                            <StarRating rating={`(95)`} />
+                            <p className="me-2 mt-2 ">Review:</p>
+                            <StarRating className="" rating={`(95)`} />
                         </div>
                         <div >
                             <FontAwesomeIcon className="me-2 " icon={faShareNodes} />
@@ -42,7 +43,13 @@ const ProductContent = (props, product) => {
                         </div>
 
                         <div className=" quantity row">
-                            <div className=" button col-2  text-center">2</div>
+                            <div className=" button col-2 px-0 text-center">
+                                <Input
+                                    className="shadow-none"
+                                    type="number"
+                                    placeholder="2"
+                                />
+                            </div>
                             <div className="add-to-cart col-6 ms-2 text-center btn ">
                                 <FontAwesomeIcon icon={faShoppingCart} className="me-2" />
                                 add to card</div>

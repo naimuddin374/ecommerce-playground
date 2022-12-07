@@ -1,13 +1,13 @@
 import ProductContent from "../../components/product-content"
 import RelatedProduct from "../../components/related-product"
-import ShopLink from './../../components/shop-link/index';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Breadcrumb from './../../components/breadcrumb/index';
 
 
 const Product = () => {
     return (
         <div className="product ">
-            <ShopLink
+            <Breadcrumb
                 mainLink={`HOME`}
                 subLink={`SHOP`}
                 icon={faArrowRight}

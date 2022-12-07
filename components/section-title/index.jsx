@@ -1,7 +1,6 @@
 import Heading from "./heading"
 import SubHeading from "./subheading"
 
-
 const SectionTitle = (props) => {
     return (
         <div id="section-title">
@@ -10,5 +9,4 @@ const SectionTitle = (props) => {
         </div>
     )
 }
-
 export default SectionTitle

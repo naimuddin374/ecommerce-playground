@@ -3,7 +3,6 @@ import RelatedProduct from "../../components/related-product"
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Breadcrumb from './../../components/breadcrumb/index';
 
-
 const Product = () => {
     return (
         <div className="product ">
@@ -14,8 +13,8 @@ const Product = () => {
                 title={`Flexible WareLess Head Phone`}
             />
             <div className="container">
-                <ProductContent />
-                <RelatedProduct />
+                <ProductContent/>
+                <RelatedProduct/>
             </div>
         </div>
     )

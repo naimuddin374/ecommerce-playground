@@ -52,7 +52,7 @@ const Shop = () => {
                     <Pagination />
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

@@ -1,4 +1,3 @@
-
 import CategotyCardImgA from "../../../assets/img/545245.png"
 import CategotyCardImgB from "../../../assets/img/headphone-headset-earphone-svgrepo-com 1.png"
 import CategotyCardImgC from "../../../assets/img/Vector (4).png"
@@ -9,7 +8,7 @@ export default [
     {
         id: 1,
         img: CategotyCardImgA,
-        name: "sohag",
+        name: "Mobile",
     },
     {
         id: 2,

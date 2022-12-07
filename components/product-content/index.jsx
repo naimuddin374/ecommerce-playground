@@ -1,6 +1,6 @@
 import StarRating from '../star-rating/index';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShareNodes, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faShareNodes,faHeart,faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 import ProductGallery from '../product-gallery';
 import { Input } from 'reactstrap';
 const ProductContent = (props, product) => {
@@ -17,7 +17,7 @@ const ProductContent = (props, product) => {
                             <StarRating className="" rating={`(95)`} />
                         </div>
                         <div >
-                            <FontAwesomeIcon className="me-2 " icon={faShareNodes} />
+                            <FontAwesomeIcon className="me-2" icon={faShareNodes} />
                             <FontAwesomeIcon icon={faHeart} />
                         </div>
                     </div>

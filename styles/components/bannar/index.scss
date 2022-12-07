@@ -3,12 +3,25 @@
     padding: 40px;
     background: #F9F3F0;
     border-radius: 5px;
-    p{
-        font-size: 12px;
-        font-weight: 300;
-    }
     h1{
         font-size: 50px;
         font-weight: 500;
     }
+}
+.banner-p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.91);
+}
+.banner-button{
+    width: 157px;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #3C1FF4;
+    border-radius: 5px;
+    color: white;
 }

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Logo from "../../../assets/img/Shoptronics (1).png"
-
+import CopyRight from "./copy-right";
 
 const Footer = () => {
     return (
         <div className="footer py-5" id="footer">
-            <div className="container">
+            <div className="container pt-5">
                 <div className="row">
                     <div className="col-3">
                         <Image src={Logo} />
@@ -18,13 +18,13 @@ const Footer = () => {
                                 <a href="#">Custom Service</a>
                             </li>
                             <li>
-                                <a href="#"> FAQs</a>
+                                <a href="#">FAQs</a>
                             </li>
                             <li>
-                                <a href="#"> Ordering Tracking</a>
+                                <a href="#">Ordering Tracking</a>
                             </li>
                             <li>
-                                <a href="#"> Contacts</a>
+                                <a href="#">Contacts</a>
                             </li>
                             <li>
                                 <a href="#">Events</a>
@@ -38,26 +38,31 @@ const Footer = () => {
                                 <a href="#">Delivery Information</a>
                             </li>
                             <li>
-                                <a href="#"> Privacy Policy</a>
+                                <a href="#">Privacy Policy</a>
                             </li>
                             <li>
                                 <a href="#">Discount</a>
                             </li>
                             <li>
-                                <a href="#"> Custom Service</a>
+                                <a href="#">Custom Service</a>
                             </li>
                             <li>
-                                <a href="#"> Terms & Condition</a>
+                                <a href="#">Terms & Condition</a>
                             </li>
                         </ul>
                     </div>
                     <div className="col-3">
                         <h4>Get Newsletter</h4>
                         <p>Get on the list and get 10% off your first order!</p>
-                        <input type="email" placeholder="write your email"/>
-                        <button className="mt-2">Subscribe Now</button>
+                        <form>
+                            <input type="email" placeholder="Your Email"/>
+                            <button className="mt-2" type="submit">Subscribe Now</button>
+                        </form> 
                     </div>
                 </div>
+                <div className="pt-5"> 
+                    <CopyRight/>
+                </div> 
             </div>
         </div>
     )

@@ -13,21 +13,21 @@ const SignUp = () => {
           <h5 className="">Sign Up</h5>
           <div className="input-area  mt-3">
             <label className="mb-1" htmlFor="">First Name</label>
-            <input type="text" className="container" />
+            <input type="text" className="container"/>
           </div>
 
           <div className="input-area  mt-3">
             <label className="mb-1" htmlFor="">Last Name</label>
-            <input type="text" className="container" />
+            <input type="text" className="container"/>
           </div>
 
           <div className="input-area  mt-3">
             <label className="mb-1" htmlFor="">User Name Or Email</label>
-            <input type="text" className="container" />
+            <input type="text" className="container"/>
           </div>
-          <div className="input-area  mt-3">
+          <div className="input-area mt-3">
             <label className="mb-1" htmlFor="">Password</label>
-            <input type="text" className="container" />
+            <input type="text" className="container"/>
           </div>
           <div className="text">
             <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described inour privacy policy.</p>

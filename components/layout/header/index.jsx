@@ -1,16 +1,14 @@
-
-import { Fragment } from "react";
-import Navbar from "./navbar";
-import TopHeader from "./top-header";
+import BottomNavbar from "./bottom-navbar";
+import TopNavbar from "./top-navbar";
 
 const Header = () => {
     return (
-        <Fragment>
-            <div className="container ">  
-                <TopHeader />
-                <Navbar />
+        <div className="sticky-top">
+            <div className="container">  
+                <TopNavbar/>
+                <BottomNavbar />
             </div>
-        </Fragment>
+        </div>  
     )
 }
 export default Header;

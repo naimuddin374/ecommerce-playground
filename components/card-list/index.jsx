@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faXmark} from '@fortawesome/free-solid-svg-icons'
 
 import CardListImg from "../../assets/img/product-38.png"
 

@@ -18,10 +18,10 @@ export default function Home() {
           <div className="py-5">
               <div className='container'>
                 <div className="pb-3">
-                <Heading  hOne="Top Categories" pragraph="Categories" />
+                <Heading  hOne="Top Categories" pragraph="Categories"/>
                 </div>
                   {categoryCard.map((item)=>(
-                    <CategoryCard name= {item.name} Img={item.img} />
+                    <CategoryCard name= {item.name} Img={item.img}/>
                   ))}
               </div>
           </div>
@@ -29,11 +29,11 @@ export default function Home() {
           <div className="py-5">
               <div className='container'>
                   <div className="pb-3">
-                      <Heading  hOne="Trending Products" pragraph="Categories" />
+                      <Heading  hOne="Trending Products" pragraph="Categories"/>
                   </div>
                  <div>
                  {trendingProductCard.map((item)=>(
-                     <TrandingProductCard title={item.title} newPrice={item.newPrice} oldPrice={item.oldPrice} img={item.img} />     
+                     <TrandingProductCard title={item.title} newPrice={item.newPrice} oldPrice={item.oldPrice} img={item.img}/>     
                   ))}
                  </div>
               </div>

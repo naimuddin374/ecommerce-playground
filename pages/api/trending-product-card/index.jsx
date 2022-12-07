@@ -1,23 +1,19 @@
-
-
 import TrandingProductCardImgA from "../../../assets/img/product-39 1.png"
 import TrandingProductCardImgB from "../../../assets/img/laptop (1).png"
 import TrandingProductCardImgC from "../../../assets/img/product-38.png"
-
-
 
 export default [
     {
         id: 1,
         img: TrandingProductCardImgA,
-        title: "Smart Digital Watch",
+        title: "Smart Digital Head Phone",
         newPrice: "$29.99",
         oldPrice: "$34.43",
     },
     {
         id: 2,
         img: TrandingProductCardImgB,
-        title: "Smart Digital Watch",
+        title: "Smart Digital Laptop",
         newPrice: "$29.99",
         oldPrice: "$34.43",
     },

@@ -10,7 +10,7 @@ import TrandingProductCard from '../components/tendign-product-card'
 import Bannar from '../components/bannar'
 import SocialService from '../components/social-service'
 import BestProducts from '../components/best-products'
-
+import BannerImg from "../assets/img/poster-03 1.png"
 export default function Home() {
     return (
         <Fragment>
@@ -24,7 +24,12 @@ export default function Home() {
                         <CategoryCard name={item.name} Img={item.img} />
                     ))}
                 </div>
-            </div>
+
+                  {categoryCard.map((item)=>(
+                    <CategoryCard name= {item.name} img={item.img}/>
+                  ))}
+              </div>
+          </div>
 
             <div className="py-5">
                 <div className='container'>
@@ -39,17 +44,19 @@ export default function Home() {
                 </div>
             </div>
 
-            <div>
-                <div className="container">
-                    <Bannar />
-                </div>
-            </div>
-            <div className="py-5">
-                <BestProducts />
-            </div>
-            <div className="py-5">
-                <SocialService />
-            </div>
-        </Fragment>
-    )
+
+          <div>
+              <div className="container">
+                  <Bannar buttonName={`Add To Card`} SubHeading={`Enhance Your Music Experience`} Heading={`Enhance Your Music Experience`} img={BannerImg}/>
+              </div>
+          </div>
+          
+          <div className="py-5">
+               <BestProducts/>
+          </div>
+          <div className="py-5">
+              <SocialService/>
+          </div>
+    </Fragment>
+  )
 }

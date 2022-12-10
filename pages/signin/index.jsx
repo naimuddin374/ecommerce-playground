@@ -1,14 +1,10 @@
-
-
 import Link from "next/link";
-import ShopLink from './../../components/shop-link/index';
+import Breadcrumb from "../../components/breadcrumb";
 
 const SignIn = () => {
-
-    
     return ( 
         <div id="signin">
-        <ShopLink />
+        <Breadcrumb/>
             <div className="container">
                 <div className="signin-box py-4  mx-auto"> <h5 className="text-center">Sign in</h5>
                     <hr/>
@@ -28,9 +24,7 @@ const SignIn = () => {
                                     <h5 className="ms-2">Remember Me</h5>
                                 </div>
                             </div>
-
                             <h5 className="forgotten">Forgotten password?</h5>
-
                         </div>
 
                         <div className="pt-5">
@@ -39,7 +33,6 @@ const SignIn = () => {
                             </Link>
                         </div>
 
-                        
                         <div className="account pt-5">
                             <h4>Don't have an account? </h4>
                         </div>

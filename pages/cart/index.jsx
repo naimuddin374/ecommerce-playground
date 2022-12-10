@@ -1,11 +1,11 @@
 import {Fragment} from "react";
 import CardList from "../../components/card-list"
 import OrderSummary from "../../components/order-summary"
-import ShopLink from "../../components/shop-link"
+import Breadcrumb from "../../components/breadcrumb";
 const CardPage = () =>{
     return(
         <Fragment>
-            <ShopLink/>
+            <Breadcrumb mainLink={`Cart`} title={`Products`}/>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7 col-md-7 col-6">

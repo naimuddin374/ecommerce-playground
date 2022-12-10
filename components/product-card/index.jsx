@@ -1,6 +1,5 @@
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import productImg from '../../assets/img/shop/product-list/product-38.png'
-import Buttons from '../button';
 import StarRating from '../star-rating';
 import DiscountPrice from "../discount-price";
 import ProductImg from "./product-img"
@@ -8,6 +7,10 @@ import RegularPrice from "../regular-price";
 import SubHeading from "../sub-heading";
 // import Images from './../image/index';
 import Heading from '../heading';
+import CustomButton from '../ui/custom-button';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const ProductCard = () => {
     return (
@@ -32,9 +35,17 @@ const ProductCard = () => {
                             <StarRating rating='(95%)' />
                         </div>
                     </div>
-                    <Buttons
-                        id={`addToCard`}
-                        className={`button w-100 rounded-0`}
+                    <CustomButton
+                        btnIcon={faCartShopping}
+                        btnText="Add to cart"
+                        size='full'
+                        variant='secondary'
+                    />
+                    <CustomButton
+                    classes={'mt-5'}
+                        btnIcon={faCartShopping}
+                        btnText="Add to cart"
+                        variant='success'
                     />
                 </CardBody>
             </Card>

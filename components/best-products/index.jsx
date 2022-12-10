@@ -6,8 +6,15 @@ import Image from "next/image"
 import BestProductsImgA from "../../assets/img/product-39 1.png"
 import BestProductsImgB from "../../assets/img/product-38.png"
 import BestProductsImgC from "../../assets/img/laptop (1).png"
+<<<<<<< Updated upstream
 import StarRating from "../star-rating"
 import Heading from '../heading'
+=======
+import Heading from '../global/headingTitle'
+import StarRating from '../star-rating'
+
+
+>>>>>>> Stashed changes
 
 const BestProducts = () => {
     return (
@@ -29,7 +36,11 @@ const BestProducts = () => {
                                     <strong>$50.76</strong>
                                     <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
                                 </div>
+<<<<<<< Updated upstream
                                 <StarRating StarRating="(96%)" />
+=======
+                                <StarRating />
+>>>>>>> Stashed changes
                             </div>
                             <a className="buttonArea text-decoration-none d-flex justify-content-center align-items-center " href="#">
                                 <FontAwesomeIcon className="pe-3" icon={faCartShopping} />
@@ -52,7 +63,11 @@ const BestProducts = () => {
                                     <strong>$50.76</strong>
                                     <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
                                 </div>
+<<<<<<< Updated upstream
                                 <StarRating StarRating="(96%)" />
+=======
+                               <StarRating />
+>>>>>>> Stashed changes
                             </div>
                             <a className="buttonArea text-decoration-none d-flex justify-content-center align-items-center " href="#">
                                 <FontAwesomeIcon className="pe-3" icon={faCartShopping} />
@@ -75,7 +90,11 @@ const BestProducts = () => {
                                     <strong>$50.76</strong>
                                     <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
                                 </div>
+<<<<<<< Updated upstream
                                 <StarRating StarRating="(96%)" />
+=======
+                                <StarRating />
+>>>>>>> Stashed changes
                             </div>
                             <a className="buttonArea text-decoration-none d-flex justify-content-center align-items-center" href="#">
                                 <FontAwesomeIcon className="pe-3" icon={faCartShopping} />

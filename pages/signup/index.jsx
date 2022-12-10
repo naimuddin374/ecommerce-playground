@@ -1,27 +1,51 @@
 
 import Link from "next/link";
+import { useState } from "react";
 import Breadcrumb from "../../components/breadcrumb";
+import CustomInput from "../../components/ui/custom-input";
 
 
 const SignUp = () => {
+  const [state, setState] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  })
+
+
+  const changeHandler = (e) => {
+    setState({
+      [e.target.name]: e.target.value
+    })
+  }
 
   return (
     <div id="signup">
-      <Breadcrumb/>
+      <Breadcrumb />
       <div className="container">
-        <div className="signup-box  mx-auto">
+        <form className="signup-box mx-auto">
           <h5 className="">Sign Up</h5>
-          <div className="input-area  mt-3">
-            <label className="mb-1" htmlFor="">First Name</label>
-            <input type="text" className="container" />
-          </div>
 
-          <div className="input-area  mt-3">
-            <label className="mb-1" htmlFor="">Last Name</label>
-            <input type="text" className="container" />
-          </div>
+          <CustomInput
+          type={'input'}
+            label={'First Name'}
+            name='firstName'
+            changeHandler={changeHandler}
+            value={state.firstName}
+          />
 
-          <div className="input-area  mt-3">
+          <CustomInput
+          type={'input'}
+            label={'Last Name'}
+            name='lastName'
+            changeHandler={changeHandler}
+            value={state.lastName}
+          />
+
+
+          <div className="input-area mt-3">
             <label className="mb-1" htmlFor="">User Name Or Email</label>
             <input type="text" className="container" />
           </div>
@@ -44,9 +68,11 @@ const SignUp = () => {
           </div>
 
           <div className="pt-3">
-            <Link href="signin"><button className="last">Sign in</button></Link>
+            {/* <Link href="signin"><button className="last">Sign in</button></Link> */}
+            <Link href="signin">Sign in</Link>
           </div>
-        </div>
+
+        </form>
       </div>
     </div>
   )

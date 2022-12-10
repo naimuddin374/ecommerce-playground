@@ -29,7 +29,7 @@ const SignUp = () => {
           <h5 className="">Sign Up</h5>
 
           <CustomInput
-          type={'input'}
+            type={'input'}
             label={'First Name'}
             name='firstName'
             changeHandler={changeHandler}
@@ -37,23 +37,33 @@ const SignUp = () => {
           />
 
           <CustomInput
-          type={'input'}
+            type={'input'}
             label={'Last Name'}
             name='lastName'
             changeHandler={changeHandler}
             value={state.lastName}
           />
-
-
-          <div className="input-area mt-3">
-            <label className="mb-1" htmlFor="">User Name Or Email</label>
-            <input type="text" className="container" />
-          </div>
-
-          <div className="input-area mt-3">
-            <label className="mb-1" htmlFor="">Password</label>
-            <input type="text" className="container" />
-          </div>
+          <CustomInput
+            type={'email'}
+            label={'Email'}
+            name='email'
+            changeHandler={changeHandler}
+            value={state.email}
+          />
+          <CustomInput
+            type={'password'}
+            label={'Password'}
+            name='password'
+            changeHandler={changeHandler}
+            value={state.password}
+          />
+          <CustomInput
+            type={'confirmPassword'}
+            label={'Confirm Password'}
+            name='password'
+            changeHandler={changeHandler}
+            value={state.confirmPassword}
+          />
 
           <div className="text">
             <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described inour privacy policy.</p>
@@ -66,12 +76,7 @@ const SignUp = () => {
           <div className="account pt-5">
             <h4>Don't have an account? </h4>
           </div>
-
-          <div className="pt-3">
-            {/* <Link href="signin"><button className="last">Sign in</button></Link> */}
-            <Link href="signin">Sign in</Link>
-          </div>
-
+          <Link className="btn mt-3 w-100 auth-button d-flex align-items-center justify-content-center" href="/signin">Sign in</Link>
         </form>
       </div>
     </div>

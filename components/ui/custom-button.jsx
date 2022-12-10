@@ -13,7 +13,6 @@ const CustomButton = ({ classes, btnText, btnAction, btnIcon, type, variant, siz
         success: 'btn-success',
         warning: 'btn-warning',
     }
-
     const sizes = {
         small: 'btn-sm',
         medium: 'btn-md',
@@ -27,7 +26,6 @@ const CustomButton = ({ classes, btnText, btnAction, btnIcon, type, variant, siz
             className={`btn ${sizes[size]} ${variants[variant]} ${classes}`}
             onClick={btnAction}
             type={type}
-
         >
             {btnIcon && <FontAwesomeIcon className="pe-2" icon={btnIcon} />}
             {btnText}

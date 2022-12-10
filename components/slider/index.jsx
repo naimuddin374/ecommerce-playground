@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import sliderImgA from "../../assets/img/banner-mockup 1.png"
-import StarReating from '../global/starReating';
+import StarReating from '../star-rating';
 
 function Slidr() {
   const settings = {
@@ -15,7 +15,7 @@ function Slidr() {
     slidesToScroll: 1,
     autoplay: true,
   };
-  return ( 
+  return (
     <div className="py-5" id="homeSlider">
       <Slider {...settings}>
         <div className="slider" >
@@ -29,13 +29,13 @@ function Slidr() {
                     <Link href="checkout">
                       <button className="buyNow">Buy Now</button>
                     </Link>
-                    
+
                     <div className='flot-left ps-4 align-items-center'>
-                      <StarReating/>
+                      <StarReating />
                       <p className='mb-0'>100 Revieue</p>
                     </div>
                   </div>
-                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">   
+                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">
                   </div>
                 </div>
               </div>
@@ -62,11 +62,11 @@ function Slidr() {
                       <button className="buyNow">Buy Now</button>
                     </Link>
                     <div className='flot-left ps-4 align-items-center'>
-                      <StarReating/>
+                      <StarReating />
                       <p className='mb-0'>100 Revieue</p>
                     </div>
                   </div>
-                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">  
+                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">
                   </div>
                 </div>
               </div>
@@ -89,15 +89,15 @@ function Slidr() {
                 <h1>Intelectial Digital Computer</h1>
                 <div className="pt-3 d-flex align-items-center">
                   <div className='d-flex align-items-center'>
-                   <Link href="checkout">
+                    <Link href="checkout">
                       <button className="buyNow">Buy Now</button>
                     </Link>
                     <div className='flot-left ps-4 align-items-center'>
-                      <StarReating/>
+                      <StarReating />
                       <p className='mb-0'>100 Revieue</p>
                     </div>
                   </div>
-                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">     
+                  <div className="d-flex ps-1 ps-md-4 ps-lg-4">
                   </div>
                 </div>
               </div>

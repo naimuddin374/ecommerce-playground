@@ -1,6 +1,6 @@
 const RegularPrice = (props) => {
     return (
-        < div >
+        <div className={props.className}>
             <strong>{props.regularPrice}</strong>
         </div>
     )

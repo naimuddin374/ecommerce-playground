@@ -2,7 +2,7 @@ import { Input, Label } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faStar, } from '@fortawesome/free-solid-svg-icons'
 import StarRating from '../star-rating'
-import FilterCheckbox from './filter-checkbox'
+import Checkbox from '../checkbox'
 
 const FilterBar = () => {
     return (
@@ -106,7 +106,6 @@ const FilterBar = () => {
                     <div className="price mt-4">
                         <h4>Price</h4>
                         <Input
-                            className=""
                             color="primary"
                             type="range"
                         />
@@ -115,20 +114,28 @@ const FilterBar = () => {
 
                     {/* Size Start  */}
                     <div className="size mt-5">
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             heading={`Size`}
                             name={`XXL`}
                             CheckId={`13`}
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`XL`}
                             CheckId={`12`}
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`L`}
                             CheckId={`14`}
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`M`}
                             CheckId={`16`}
                         />
@@ -137,23 +144,31 @@ const FilterBar = () => {
 
                     {/* Brand Start  */}
                     <div className="brand mt-5">
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             heading={`brand`}
                             name={`Apple`}
                             CheckId={`21`}
 
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`Samsung`}
                             CheckId={`22`}
 
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`Realme`}
                             CheckId={`23`}
 
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`Nokia`}
                             CheckId={`24`}
                         />
@@ -174,22 +189,30 @@ const FilterBar = () => {
                     {/* Rating Range End */}
                     {/* Color-Family Start  */}
                     <div className="color-family mt-5">
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             heading={`Color-Family`}
                             name={`Red`}
                             CheckId={`17`}
 
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`White`}
                             CheckId={`18`}
 
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`Green`}
                             CheckId={`19`}
                         />
-                        <FilterCheckbox
+                        <Checkbox
+                            type={`checkbox`}
+                            className={`checkbox`}
                             name={`Blue`}
                             CheckId={`20`}
                         />

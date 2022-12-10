@@ -1,8 +1,6 @@
-
-
 const SubHeading = (props) => {
     return (
-        <div>
+        <div className={props.className}>
             <p>{props.subHeading}</p>
         </div>
     )

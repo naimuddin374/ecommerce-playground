@@ -1,7 +1,8 @@
 
+import productImg from '../../assets/img/shop/product-list/product-38.png'
 
 import ImageList from "./image-list"
-import ProductImage from "./product-img"
+import Images from "./../image/index"
 
 const ProductGallery = (props) => {
     return (
@@ -11,7 +12,10 @@ const ProductGallery = (props) => {
                     <ImageList />
                 </div>
                 <div className="col-9">
-                    <ProductImage />
+                    <Images
+                        src={productImg}
+                        className={`main-pdt`}
+                    />
                 </div>
                 <p>{props.pdtText}</p>
             </div>

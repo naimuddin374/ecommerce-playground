@@ -1,7 +1,3 @@
-@import './add-to-cart-button';
-@import './product-img';
-@import './product-title';
-
 #product-card {
     .pdt-card {
         border: none;
@@ -9,5 +5,37 @@
         &:hover .button {
             opacity: 1;
         }
+
     }
+
+    .heading {
+
+        text-decoration: none;
+
+        p {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: rgba(24, 20, 20, 0.91);
+        }
+    }
+}
+
+.product-img {
+    img {
+        text-decoration: none !important;
+        padding: 60px;
+        background-color: #F6F7FB;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.button {
+    opacity: 0;
+    border: none;
+    border-radius: 0;
+    background-color: $primaryColor !important;
 }

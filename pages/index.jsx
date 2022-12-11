@@ -25,10 +25,10 @@ export default function Home() {
                     ))}
                 </div>
 
-                  {categoryCard.map((item)=>(
-                    <CategoryCard name= {item.name} img={item.img}/>
+                  {/* {categoryCard.map((item)=>(
+                    <CategoryCard name={item.name} img={item.img}/>
                   ))}
-              </div>
+              </div> */}
           </div>
 
             <div className="py-5">

@@ -1,5 +1,5 @@
 import FilterBar from "../../components/shop-bar"
-import ProductList from './../../components/product-list';
+import ProductCard from "../../components/product-card"
 import Pagination from "../../components/pagination"
 import ShopBar from '../../components/filter-bar';
 import Breadcrumb from "../../components/breadcrumb";
@@ -20,40 +20,40 @@ const Shop = () => {
                     <div className="mt-3">
                         <div className="row">
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='1' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='2' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='3' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='4' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='5' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='7' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='8' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='9' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='10' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='11' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='12' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                             <div className="col-3">
-                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                                <ProductCard id='13' heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                         </div>
                     </div>

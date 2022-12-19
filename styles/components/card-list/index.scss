@@ -1,33 +1,54 @@
-
-
-
-
-
-#CardList{
+#CardList {
     border-radius: 3px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
     margin-top: -40px;
     background-color: white;
-    .CardListImg{
-        width: 103px;
-        height: 80px;
+
+    .CardListImg {
+        img {
+            width: 102px;
+            height: auto;
+        }
     }
-    button{
+
+    .heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.88);
+    }
+
+    .price {
+        strong {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+
+    .quantity {
         width: 148px;
         height: 36px;
-        background-color: rgba(217, 217, 217, 0.35);
-    box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
-
         border: none;
+        background: rgba(217, 217, 217, 0.35);
     }
-    .cardListIcon{
+
+
+    .cardListIcon {
         color: red;
         border: 1px solid red;
         border-radius: 50px;
         font-size: 10px;
         padding: 3px 6px;
     }
-    a{
+
+    a {
         color: red;
         text-decoration: none;
     }

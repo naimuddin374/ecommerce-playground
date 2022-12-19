@@ -3,7 +3,7 @@ import ReactStars from 'react-stars'
 
 const StarRating = (props) => {
     return (
-        <div id="star-rating" className=" d-flex">
+        <div id="star-rating" className=" d-flex align-items-center">
             <div className="star-icon">
                 <ReactStars
                     count={5}

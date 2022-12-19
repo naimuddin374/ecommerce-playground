@@ -17,7 +17,7 @@ import CustomSlider from '../components/custom-slider'
 
 export default function Home() {
     return (
-        <Fragment>z
+        <Fragment>
             <CustomSlider />
             <div className="py-5">
                 <div className='container'>

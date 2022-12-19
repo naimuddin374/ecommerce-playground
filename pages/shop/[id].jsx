@@ -1,11 +1,13 @@
 import ProductContent from "../../components/product-content"
 import RelatedProduct from "../../components/related-product"
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import Breadcrumb from './../../components/breadcrumb/index';
-
+import Breadcrumb from '../../components/breadcrumb/index';
+import { useRouter } from 'next/router';
 const Product = () => {
+    const router = useRouter()
+    const id = router.query.id
     return (
-        <div className="product ">
+        < div className="product " >
             <Breadcrumb
                 mainLink={`HOME`}
                 subLink={`SHOP`}
@@ -13,10 +15,10 @@ const Product = () => {
                 title={`Flexible WareLess Head Phone`}
             />
             <div className="container">
-                <ProductContent/>
-                <RelatedProduct/>
+                <ProductContent />
+                <RelatedProduct />
             </div>
-        </div>
+        </div >
     )
 }
 export default Product

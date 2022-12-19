@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
+import Link from "next/link"
 const PaginationBar = () => {
     return (
-        <div>
-            <div className="left-side p-2">
-                <a href="#">1</a>
+        <div className="left-side p-2">
+            <Link href="#">1
                 <span className="px-1">/</span>
-                <a href="#">4</a>
+                <span>4</span>
                 <FontAwesomeIcon className="ms-1" icon={faAngleRight} />
-            </div>
+            </Link>
         </div>
     )
 }

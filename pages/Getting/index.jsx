@@ -3,7 +3,7 @@ import Breadcrumb from '../../components/breadcrumb';
 const Getting = () => {
     return (
         <div id="getting">
-            <Breadcrumb/>
+            <Breadcrumb />
             <div className="container">
                 <div className="getting-box">
                     <h3 className="getting-heading">Thank you. Your order has been received.</h3>
@@ -37,7 +37,7 @@ const Getting = () => {
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     )
 }
 export default Getting;

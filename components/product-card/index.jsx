@@ -12,29 +12,31 @@ import CustomSubHeading from '../ui/custom-sub-heading';
 
 
 
-const ProductCard = () => {
+const ProductCard = ({ id }) => {
     return (
         <div id="product-card" className="my-3">
             <Card className="pdt-card">
                 <CustomImage
+                    actionLink={`/shop/${id}`}
                     src={productImg}
                     classes={`product-img`}
                 />
                 <CardBody>
-                    <CardTitle >
+                    <CardTitle>
                         <CustomSubHeading
                             subName="Head Phone"
                         />
                     </CardTitle>
                     <CustomHeading
+                        actionLink={`/shop/${id}`}
                         classes={`heading`}
                         hedName="Smart Digital Watch"
                     />
                     <div className="d-flex align-items-center justify-content-between mb-3">
-                        <div className="d-flex">
+                        <div className="d-flex align-items-center">
                             <RegularPrice regularPrice={`$223`} />
                             <DiscountPrice
-                                className={`ps-3 mb-0 text-decoration-line-through text-muted`}
+                                className={`ps-3 mb-0`}
                                 dicPrice={`$333`} />
                         </div>
                         <div>

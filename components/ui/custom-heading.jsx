@@ -6,7 +6,7 @@ const CustomHeading = ({ hedName, actionLink, classes }) => {
             href={actionLink ? actionLink : ''}
             className={classes}
         >
-            <p>{hedName}</p>
+            {hedName}
         </Link>
     )
 }

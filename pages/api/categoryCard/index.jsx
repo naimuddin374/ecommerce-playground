@@ -1,33 +1,33 @@
-import CategotyCardImgA from "../../../assets/img/545245.png"
-import CategotyCardImgB from "../../../assets/img/headphone-headset-earphone-svgrepo-com 1.png"
-import CategotyCardImgC from "../../../assets/img/Vector (4).png"
-import CategotyCardImgD from "../../../assets/img/Vector (1).png"
-import CategotyCardImgE from "../../../assets/img/Group.png"
+import CategoryCardImgA from "../../../assets/img/545245.png"
+import CategoryCardImgB from "../../../assets/img/headphone-headset-earphone-svgrepo-com 1.png"
+import CategoryCardImgC from "../../../assets/img/Vector (4).png"
+import CategoryCardImgD from "../../../assets/img/Vector (1).png"
+import CategoryCardImgE from "../../../assets/img/Group.png"
 
 export default [
     {
         id: 1,
-        img: CategotyCardImgA,
+        img: CategoryCardImgA,
         name: "Mobile",
     },
     {
         id: 2,
-        img: CategotyCardImgB,
+        img: CategoryCardImgB,
         name: "Head Phone",
     },
     {
         id: 3,
-        img: CategotyCardImgC,
+        img: CategoryCardImgC,
         name: "Camera",
     },
     {
         id: 4,
-        img: CategotyCardImgD,
+        img: CategoryCardImgD,
         name: "Speaker",
     },
     {
         id: 5,
-        img: CategotyCardImgE,
+        img: CategoryCardImgE,
         name: "computer",
     },
 ]

@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
 import ReactStars from 'react-stars'
 
@@ -9,10 +7,10 @@ const StarRating = (props) => {
             <div className="star-icon">
                 <ReactStars
                     count={5}
-                    size={24}
+                    size={18}
                     color2={'#ffd700'} />
             </div>
-            <div className='ps-2 mt-2'>
+            <div className='ps-1 mt-0'>
                 <p className="mb-0">{props.rating}</p>
             </div>
         </div>

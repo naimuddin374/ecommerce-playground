@@ -1,16 +1,18 @@
+import Link from "next/link";
+import Img from "../ui/image";
+// import Heading from '../ui/heading'
 
-import CustomHeading from '../ui/custom-heading'
-import CustomImage from '../ui/custom-image'
-import CategoryCardImg from "../../assets/img/545245.png"
-
-function Categories() {
-    return (
-         <div className="pt-4" id="categoryCard">
-            <CustomImage actionLink={`./shop`} classes={`category-card-img`} src={CategoryCardImg} />
-            <CustomHeading actionLink={`./shop`} classes={`pt-5 category-card-heading`} hedName={`Mobile`}/>
-        </div> 
-    )
+function Categories(props) {
+  return (
+    <Link
+      className="py-5 px-4 text-decoration-none"
+      id="categoryCard"
+      href={`#`}
+    >
+      <Img className="categoryCardImg" img={props.img} />
+      <h1 className="pt-5">{props.name}</h1>
+      {/* <Heading Heading={props.Heading}/> */}
+    </Link>
+  );
 }
-export default Categories
-
-
+export default Categories;

@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import sliderImgA from "../../assets/img/banner-mockup 1.png"
+import sliderImgB from "../../assets/img/product-39 1.png"
 import SingleItem from './single-item';
 
 function CustomSlider() {
@@ -20,32 +21,32 @@ function CustomSlider() {
       <Slider {...settings}>
 
         <SingleItem
-          title='Intelectial Digital Computer 01'
-          subTitle='Hot Deal In This Week'
-          buttonText='Buy Now'
+          hedName='Intelectial Digital Computer 01'
+          subName='Hot Deal In This Week'
+          btnText='Buy Now'
           buttonAction='/'
-          imgSrc={sliderImgA}
+          src={sliderImgA}
         />
         <SingleItem
-          title='Intelectial Digital Computer 02'
-          subTitle='Hot Deal In This Week'
-          buttonText='Buy Now'
+          hedName='Smart Digital Watch 02'
+          subName='Hot Deal In This Week'
+          btnText='Buy Now'
           buttonAction='/'
-          imgSrc={sliderImgA}
+          src={sliderImgB}
         />
         <SingleItem
-          title='Intelectial Digital Computer 03'
-          subTitle='Hot Deal In This Week'
-          buttonText='Buy Now'
+          hedName='Intelectial Digital Computer 03'
+          subName='Hot Deal In This Week'
+          btnText='Buy Now'
           buttonAction='/'
-          imgSrc={sliderImgA}
+          src={sliderImgA}
         />
         <SingleItem
-          title='Intelectial Digital Computer 04'
-          subTitle='Hot Deal In This Week'
-          buttonText='Buy Now'
+          hedName='Smart Digital Watch 04'
+          subName='Hot Deal In This Week'
+          btnText='Buy Now'
           buttonAction='/'
-          imgSrc={sliderImgA}
+          src={sliderImgB}
         />
       </Slider>
     </div>

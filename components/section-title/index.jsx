@@ -1,12 +1,19 @@
-import Heading from "./heading"
-import SubHeading from "./subheading"
 
-const SectionTitle = (props) => {
+import CustomHeading from '../ui/custom-heading';
+import CustomSubHeading from '../ui/custom-sub-heading';
+
+const SectionTitle = ({ subName, hedName, classes }) => {
     return (
         <div id="section-title">
-            <SubHeading subHeading={props.subHeading} />
-            <Heading heading={props.heading} />
+            <CustomSubHeading
+                subName={subName}
+                classes={`sub-heading ${classes}`}
+            />
+            <CustomHeading
+                hedName={hedName}
+                classes={`heading ${classes}`}
+            />
         </div>
-    )
+    ) 
 }
 export default SectionTitle

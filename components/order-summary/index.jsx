@@ -1,12 +1,12 @@
 
-
-
+import CustomHeading from "../ui/custom-heading"
+import CustomButton from "../ui/custom-button"
 
 const OrderSummary = ()=>{
     return(
         <div id="OrderSummary">
             <div className="py-4">
-                <h4 className="text-center">Order Summar</h4>
+                <CustomHeading classes={'order-summary-heading'} hedName="Order Summary"/>
             </div>
             <hr/>
             <div className="px-4 pb-4">
@@ -24,7 +24,7 @@ const OrderSummary = ()=>{
                     <strong>$828</strong>
                 </div>
                 <div className="text-center pt-4">
-                    <button>Proceed to cheackout</button>
+                    <CustomButton classes={'order-summary-button'} btnText="Proceed to cheackout"/>
                 </div>
             </div>
         </div>

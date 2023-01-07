@@ -4,19 +4,23 @@ import ProductList from './../../components/product-list';
 const RelatedProduct = () => {
     return (
         <div id="related-product">
-            <SectionTitle subHeading={`Product`} heading={`Related Product`} />
+            <SectionTitle
+                subName='Product'
+                hedName={`Related Product`}
+                classes={`product-heading`}
+            />
             <div className="row">
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'}/>
+                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'}/>
+                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'}/>
+                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'}/>
+                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
             </div>
         </div>

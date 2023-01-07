@@ -1,90 +1,29 @@
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
-import Image from "next/image"
-import BestProductsImgA from "../../assets/img/product-39 1.png"
-import BestProductsImgB from "../../assets/img/product-38.png"
-import BestProductsImgC from "../../assets/img/laptop (1).png"
-// import Heading from '../global/headingTitle'
-import StarRating from '../star-rating'
-
-
+import BestProductCardImgA from "../../assets/img/product-39 1.png"
+import BestProductCardImgB from "../../assets/img/laptop (1).png"
+import BestProductCardImgC from "../../assets/img/prodcut6 1.png"
+import BestProductCardImgD from "../../assets/img/product-38.png"
+import SectionTitle from "../section-title"
+import ProductCard from "../product-card"
 
 const BestProducts = () => {
     return (
         <div className="container">
-            <div className="pb-3">
-                {/* <Heading pragraph="Nest" hOne="Best Selling Products" /> */}
+            <div className="pb-2">
+                <SectionTitle subName="Nest" hedName="Best Selling Products"/>
             </div>
             <div className="row">
-                <div className="col-4">
-                    <div className="BestProducts card" id="BestProducts">
-                        <div className="imgArea">
-                            <a href="#"><Image className="w-100 h-auto" src={BestProductsImgA} /></a>
-                        </div>
-                        <div className="card-body">
-                            <p className="mb-0">Head Phone</p>
-                            <h3>Smart Digital Watch</h3>
-                            <div className="d-flex justify-content-between pb-4">
-                                <div className="pe-4">
-                                    <strong>$50.76</strong>
-                                    <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
-                                </div>
-                                <StarRating />
-                            </div>
-                            <a className="buttonArea text-decoration-none d-flex justify-content-center align-items-center " href="#">
-                                <FontAwesomeIcon className="pe-3" icon={faCartShopping} />
-                                <p className="mb-0">Add To Card</p>
-                            </a>
-                        </div>
-                    </div>
+                <div className="col-3">
+                   <ProductCard src={BestProductCardImgA}/>
                 </div>
-
-                <div className="col-4">
-                    <div className="BestProducts card" id="BestProducts">
-                        <div className="imgArea">
-                            <a href="#"><Image className="w-100 h-auto" src={BestProductsImgB} /></a>
-                        </div>
-                        <div className="card-body">
-                            <p className="mb-0">Head Phone</p>
-                            <h3>Smart Digital Watch </h3>
-                            <div className="d-flex justify-content-between pb-4">
-                                <div className="pe-4">
-                                    <strong>$50.76</strong>
-                                    <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
-                                </div>
-                                <StarRating />
-                            </div>
-                            <a className="buttonArea text-decoration-none d-flex justify-content-center align-items-center " href="#">
-                                <FontAwesomeIcon className="pe-3" icon={faCartShopping} />
-                                <p className="mb-0">Add To Card</p>
-                            </a>
-                        </div>
-                    </div>
+                <div className="col-3">
+                   <ProductCard src={BestProductCardImgB}/>
                 </div>
-
-                <div className="col-4">
-                    <div className="BestProducts card" id="BestProducts">
-                        <div className="imgArea">
-                            <a href="#"><Image className="w-100 h-auto" src={BestProductsImgC} /></a>
-                        </div>
-                        <div className="card-body">
-                            <p className="mb-0">Head Phone</p>
-                            <h3>Smart Digital Watch</h3>
-                            <div className="d-flex justify-content-between pb-4">
-                                <div className="pe-4">
-                                    <strong>$50.76</strong>
-                                    <strong className="ps-3 text-muted text-decoration-line-through">$20.87</strong>
-                                </div>
-                                <StarRating />
-                            </div>
-                            <a className="buttonArea text-decoration-none d-flex justify-content-center align-items-center" href="#">
-                                <FontAwesomeIcon className="pe-3" icon={faCartShopping} />
-                                <p className="mb-0">Add To Card</p>
-                            </a>
-                        </div>
-                    </div>
+                <div className="col-3">
+                   <ProductCard src={BestProductCardImgC}/>
+                </div>
+                <div className="col-3">
+                   <ProductCard src={BestProductCardImgD}/>
                 </div>
             </div>
         </div>

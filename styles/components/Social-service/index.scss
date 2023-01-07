@@ -6,9 +6,12 @@
         text-align: center;
         padding: 30px;
     }
-    .SocialServiceImg{
-        width: 80%;
-        text-align: center;
-        height: auto;
+    .social-service-img{
+        img{
+            width: 80%;
+            text-align: center;
+            height: auto;
+        }
+        
     }
 }

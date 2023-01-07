@@ -1,4 +1,5 @@
-import Image from "next/image"
+
+import CustomImage from "../ui/custom-image"
 import SocialServiceImgA from "../../assets/img/BasicSel.png"
 import SocialServiceImgB from "../../assets/img/IconFic.png"
 import SocialServiceImgC from "../../assets/img/LeyaK.png"
@@ -9,16 +10,16 @@ const SocialService = () =>{
         <div className="container" id="SocialService">
             <div className="row">
                 <div className="col-3 imgAera">
-                    <a href="#"><Image className="SocialServiceImg" src={SocialServiceImgA}/></a>
+                    <CustomImage classes={'social-service-img'} src={SocialServiceImgA} actionLink={`#`}/>
                 </div>
                 <div className="col-3 imgAera">
-                    <a href="#"><Image className="SocialServiceImg" src={SocialServiceImgB}/></a>
+                      <CustomImage classes={'social-service-img'} src={SocialServiceImgB} actionLink={`#`}/>
                 </div>
                 <div className="col-3 imgAera">
-                    <a href="#"><Image className="SocialServiceImg" src={SocialServiceImgC}/></a>
+                      <CustomImage classes={'social-service-img'} src={SocialServiceImgC} actionLink={`#`}/>
                 </div>
                 <div className="col-3 imgAera">
-                    <a href="#"><Image className="SocialServiceImg" src={SocialServiceImgD}/></a>
+                      <CustomImage classes={'social-service-img'} src={SocialServiceImgD} actionLink={`#`}/>
                 </div>       
             </div>
         </div>

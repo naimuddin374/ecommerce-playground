@@ -12,12 +12,12 @@ import CustomSubHeading from '../ui/custom-sub-heading';
 
 
 
-const ProductCard = () => {
+const ProductCard = ({src}) => {
     return (
         <div id="product-card" className="my-3">
             <Card className="pdt-card">
                 <CustomImage
-                    src={productImg}
+                    src={src?src:productImg}
                     classes={`product-img`}
                 />
                 <CardBody>

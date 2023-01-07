@@ -7,13 +7,13 @@ const SectionTitle = ({ subName, hedName, classes }) => {
         <div id="section-title">
             <CustomSubHeading
                 subName={subName}
-                classes={classes}
+                classes={`sub-heading ${classes}`}
             />
             <CustomHeading
                 hedName={hedName}
-                classes={classes}
+                classes={`heading ${classes}`}
             />
         </div>
-    )
+    ) 
 }
 export default SectionTitle

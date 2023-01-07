@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-
+import Image from "next/image"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faXmark} from '@fortawesome/free-solid-svg-icons'
 import CardListImg from "../../assets/img/product-38.png"
 import CustomImage from './../ui/custom-image';
 import CustomHeading from './../ui/custom-heading';
@@ -8,13 +8,11 @@ import RegularPrice from './../regular-price/index';
 import CustomInput from './../ui/custom-input';
 import CustomButton from './../ui/custom-button';
 
-const CardList = () => {
-    return (
-        <div className="d-flex justify-content-between align-items-center py-4 px-3" id="CardList">
-            <div className="d-flex justify-content-between align-items-center">
-                <CustomImage
-                    classes={'CardListImg'}
-                    src={CardListImg} />
+const CardList = () =>{
+    return(
+        <div className="d-flex justify-content-between align-items-center py-4 px-3" id="CardList"> 
+            <div className="d-flex align-items-center">
+                <Image className="card-list-img" src={CardListImg}/>
                 <div className="ps-3">
                     <CustomHeading
                         classes={'heading'}
@@ -40,7 +38,7 @@ const CardList = () => {
                     />
                 </div>
                 <div className="pt-2">
-                    <FontAwesomeIcon className="cardListIcon" icon={faXmark} />
+                    <FontAwesomeIcon className="card-list-icon" icon={faXmark}/>
                     <a className="ps-2" href="3">Remove</a>
                 </div>
             </div>

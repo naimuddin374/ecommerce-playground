@@ -1,16 +1,18 @@
-import Image from "next/image"
-import CheckOutCardImg from "../../assets/img/product-39 1.png"
 
+import CheckOutCardImg from "../../assets/img/product-39 1.png"
+import CustomImage from "../ui/custom-image"
+import CustomHeading from "../ui/custom-heading"
+import CustomButton from "../ui/custom-button"
 const CheckOutCard = ()=>{
     return(
         <div className="py-4 mb-5" id="checkOutCard">
             <h4 className="text-center">Your order</h4>
             <hr/>
             <div className="d-flex p-2">
-                <Image className="CheckOutCardImg" src={CheckOutCardImg}/>
+                <CustomImage classes={'check-out-card-img'} src={CheckOutCardImg}/> 
                 <div className="ps-3">
-                    <h5>Flexible WareLess Head Phone</h5>
-                    <p>$399 x 2</p>
+                    <CustomHeading classes={'check-out-card-heading'} hedName="Flexible WareLess Head Phone"/>
+                    <p className="check-out-card-price">$399 x 2</p>
                 </div>
             </div>
             <hr/>
@@ -21,12 +23,12 @@ const CheckOutCard = ()=>{
            <div className="pt-4 px-4">
                 <h4 className="text-center">Shipping</h4>
                 <div className="pb-2">
-                    <input type="radio" id="charg" name="shipping" value="HTML"/>
-                    <label for="charg">Shipping Free</label>
+                    <input type="radio" id="Shipping-Free" name="shipping" value="HTML"/>
+                    <label for="Shipping-Free">Shipping Free</label>
                 </div>
                 <div>
-                    <input type="radio" id="charg" name="shipping" value="HTML"/>
-                    <label for="charg">Shipping Fee $20</label>
+                    <input type="radio" id="Shipping-Fee" name="shipping" value="HTML"/>
+                    <label for="Shipping-Fee">Shipping Fee $20</label>
                 </div>
            </div>
            <hr/>
@@ -46,7 +48,7 @@ const CheckOutCard = ()=>{
                 </div>
            </div>
            <div className="text-center pt-5">
-                <button>Please Order</button>
+            <CustomButton classes={'check-out-card-button'} btnText="Please Order"/>
            </div>
         </div>
     )

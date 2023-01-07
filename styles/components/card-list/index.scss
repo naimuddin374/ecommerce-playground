@@ -3,12 +3,9 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
     margin-top: -40px;
     background-color: white;
-
-    .CardListImg {
-        img {
-            width: 102px;
-            height: auto;
-        }
+    .card-list-img{
+        width: 103px;
+        height: 80px;
     }
 
     .heading {
@@ -38,9 +35,7 @@
         border: none;
         background: rgba(217, 217, 217, 0.35);
     }
-
-
-    .cardListIcon {
+    .card-list-icon{
         color: red;
         border: 1px solid red;
         border-radius: 50px;

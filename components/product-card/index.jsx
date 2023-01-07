@@ -21,20 +21,21 @@ const ProductCard = ({src}) => {
                     classes={`product-img`}
                 />
                 <CardBody>
-                    <CardTitle >
+                    <CardTitle>
                         <CustomSubHeading
                             subName="Head Phone"
                         />
                     </CardTitle>
                     <CustomHeading
+                        actionLink={`/shop/${id}`}
                         classes={`heading`}
                         hedName="Smart Digital Watch"
                     />
                     <div className="d-flex align-items-center justify-content-between mb-3">
-                        <div className="d-flex">
+                        <div className="d-flex align-items-center">
                             <RegularPrice regularPrice={`$223`} />
                             <DiscountPrice
-                                className={`ps-3 mb-0 text-decoration-line-through text-muted`}
+                                className={`ps-3 mb-0`}
                                 dicPrice={`$333`} />
                         </div>
                         <div>

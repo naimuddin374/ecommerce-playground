@@ -1,5 +1,5 @@
+import ProductCard from "../product-card";
 import SectionTitle from "../section-title"
-import ProductList from './../../components/product-list';
 
 const RelatedProduct = () => {
     return (
@@ -11,16 +11,16 @@ const RelatedProduct = () => {
             />
             <div className="row">
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
-const RegularPrice = (props) => {
+const RegularPrice = ({ regularPrice, className }) => {
     return (
-        <div className={props.className}>
-            <strong>{props.regularPrice}</strong>
+        <div className={className}>
+            <strong>{regularPrice}</strong>
         </div>
     )
 }

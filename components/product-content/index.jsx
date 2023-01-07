@@ -1,9 +1,10 @@
 import StarRating from '../star-rating/index';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faShareNodes,faHeart,faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShareNodes, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import ProductGallery from '../product-gallery';
-import { Input } from 'reactstrap';
-const ProductContent = (props, product) => {
+import Link from 'next/link'
+import CustomInput from './../ui/custom-input';
+const ProductContent = () => {
     return (
         <div id="pdt-content">
             <div className="row">
@@ -12,9 +13,9 @@ const ProductContent = (props, product) => {
                 </div>
                 <div className="col-5 ">
                     <div className="d-flex justify-content-between align-items-center">
-                        <div className="d-flex">
-                            <p className="me-2 mt-2 ">Review:</p>
-                            <StarRating className="" rating={`(95)`} />
+                        <div className="d-flex align-items-center">
+                            <p className="me-2 mb-0">Review:</p>
+                            <StarRating rating={`(95)`} />
                         </div>
                         <div >
                             <FontAwesomeIcon className="me-2" icon={faShareNodes} />
@@ -42,17 +43,17 @@ const ProductContent = (props, product) => {
                             <span className="less-price">-11%</span>
                         </div>
 
-                        <div className=" quantity row">
-                            <div className=" button col-2 px-0 text-center">
-                                <Input
-                                    className="shadow-none"
+                        <div className=" quantity row align-items-center ">
+                            <div className=" input col-2 p-0 text-center">
+                                <CustomInput
+                                    classes="shadow-none"
                                     type="number"
                                     placeholder="2"
                                 />
                             </div>
-                            <div className="add-to-cart col-6 ms-2 text-center btn ">
+                            <Link href='' className="add-to-cart col-6 ms-2 text-center btn ">
                                 <FontAwesomeIcon icon={faShoppingCart} className="me-2" />
-                                add to card</div>
+                                add to card</Link>
                         </div>
                     </div>
                 </div>

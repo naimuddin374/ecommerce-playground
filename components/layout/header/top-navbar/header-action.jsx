@@ -4,10 +4,10 @@ import {faUser,faHeart,faCartShopping} from '@fortawesome/free-solid-svg-icons'
 const HeaderAction = () => {
     return(
         <div className="text-end d-flex">
-            <Link href="signin"><FontAwesomeIcon className="hearderIcon" icon={faUser}/></Link>
-            <Link href="wishlist"><FontAwesomeIcon className="hearderIcon" icon={faHeart}/></Link>
+            <Link href="signin"><FontAwesomeIcon className="header-action-icon" icon={faUser}/></Link>
+            <Link href="wishlist"><FontAwesomeIcon className="header-action-icon" icon={faHeart}/></Link>
 
-            <Link className='tpo-header-icon' href="cart"><FontAwesomeIcon className="hearderIcon" icon={faCartShopping}/>
+            <Link className='tpo-header-icon' href="cart"><FontAwesomeIcon className="header-action-icon" icon={faCartShopping}/>
                 <div className='add-items'>
                     <small>2</small>
                 </div>

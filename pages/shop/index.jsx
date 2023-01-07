@@ -19,31 +19,40 @@ const Shop = () => {
                     <FilterBar />
                     <div className="mt-3">
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
+                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                            </div>
+                            <div className="col-3">
+                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                            </div>
+                            <div className="col-3">
+                                <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
+                            </div>
+                            <div className="col-3">
                                 <ProductList heading={'Smart Digital Watch'} title={'Head Phone'} />
                             </div>
                         </div>

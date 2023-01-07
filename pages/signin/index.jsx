@@ -1,25 +1,52 @@
 import Link from "next/link";
 import Breadcrumb from "../../components/breadcrumb";
+import CustomInput from "../../components/ui/custom-input";
+import { useState } from 'react';
+
+
 
 const SignIn = () => {
-    return ( 
+    const [state, setState] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+      })
+    
+    
+      const changeHandler = (e) => {
+        setState({
+          [e.target.name]: e.target.value
+        })
+      }
+    
+    
+    return (
         <div id="signin">
-        <Breadcrumb/>
+            <Breadcrumb />
             <div className="container">
                 <div className="signin-box py-4  mx-auto"> <h5 className="text-center">Sign in</h5>
-                    <hr/>
+                    <hr />
                     <div className="py-3 from-area">
-                        <div className="input-area">
-                            <label className="mb-1" htmlFor="">User Name Or Email</label>
-                            <input type="text" className="container"/>
-                        </div>
-                        <div className="input-area mt-3">
-                            <label className="mb-1" htmlFor="">Password</label>
-                            <input type="text" className="container"/>
-                        </div>
+                        <CustomInput
+                            type={'email'}
+                            label={'Email'}
+                            name='email'
+                            changeHandler={changeHandler}
+                            value={state.email}
+                        />
+                        <CustomInput
+                            type={'password'}
+                            label={'Password'}
+                            name='password'
+                            changeHandler={changeHandler}
+                            value={state.password}
+                        />
+
                         <div className="box pt-3 d-flex justify-content-between text-muted">
                             <div className="d-flex">
-                                <input type="checkbox"/>
+                                <input type="checkbox" />
                                 <div className="remember">
                                     <h5 className="ms-2">Remember Me</h5>
                                 </div>
@@ -36,15 +63,11 @@ const SignIn = () => {
                         <div className="account pt-5">
                             <h4>Don't have an account? </h4>
                         </div>
-                        <Link href="signup">
-                            <div className="pt-3">
-                                <button className="up">Sign up</button>
-                            </div>
-                        </Link>
+                        <Link className="btn mt-3 w-100 auth-button d-flex align-items-center justify-content-center" href="/signup">Sign Up</Link>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     )
 }
 export default SignIn;

@@ -1,6 +1,9 @@
+
 import Image from "next/image";
 import Logo from "../../../assets/img/Shoptronics (1).png"
 import CopyRight from "./copy-right";
+import CustomButton from "../../ui/custom-button";
+import CustomInput from "../../ui/custom-input";
 
 const Footer = () => {
     return (
@@ -55,8 +58,18 @@ const Footer = () => {
                         <h4>Get Newsletter</h4>
                         <p>Get on the list and get 10% off your first order!</p>
                         <form>
-                            <input type="email" placeholder="Your Email"/>
-                            <button className="mt-2" type="submit">Subscribe Now</button>
+                            <CustomInput
+                                type={'input'}
+                                name='email'
+                                placeholder='Your Email'
+                            />
+                            <CustomButton 
+                                classes={'mt-2'} 
+                                type='submit'
+                                variants='btn-primary'
+                                btnText='Subscribe Now' 
+                                sizes='full'
+                            />
                         </form> 
                     </div>
                 </div>

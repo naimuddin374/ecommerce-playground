@@ -4,7 +4,7 @@ import Logo from "./logo"
 
 const TopNavbar = () => {
     return (
-        <div id='top-header' className='d-flex justify-content-between container px-0 py-3'>
+        <div id='top-navbar' className='d-flex justify-content-between container px-0 py-3'>
             <Logo/>
             <SearchBar/>
             <HeaderAction/>

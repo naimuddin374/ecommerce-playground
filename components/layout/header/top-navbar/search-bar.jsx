@@ -1,6 +1,8 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
-import {Form,Input,Button} from 'reactstrap'
+import {Form} from 'reactstrap'
+import CustomInput from "../../../ui/custom-input" 
+import CustomButton from "../../../ui/custom-button"
 
 const SearchBar = () => {
     return (
@@ -8,12 +10,13 @@ const SearchBar = () => {
             <div className='search-input-icon'>
                 <FontAwesomeIcon icon={faSearch} />
             </div>
-            <Input
-                className='shadow-none'
-                type="text"
-                placeholder='Search for Products'
+            <CustomInput 
+                classes={'search-bar-input'}
             />
-            <Button type="submit">Search</Button>
+            <CustomButton 
+                classes={'search-bar-button'} 
+                btnText='Search'
+            />
         </Form>
     )
 }

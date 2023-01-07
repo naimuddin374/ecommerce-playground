@@ -2,28 +2,34 @@ import { Card, CardBody, CardTitle } from 'reactstrap';
 import productImg from '../../assets/img/shop/product-list/product-38.png'
 import StarRating from '../star-rating';
 import DiscountPrice from "../discount-price";
-import ProductImg from "./product-img"
+import CustomImage from '../ui/custom-image';
 import RegularPrice from "../regular-price";
-import SubHeading from "../sub-heading";
-// import Images from './../image/index';
-import Heading from '../heading';
+
 import CustomButton from '../ui/custom-button';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import CustomHeading from './../ui/custom-heading';
+import CustomSubHeading from '../ui/custom-sub-heading';
 
 
 
-const ProductCard = () => {
+const ProductCard = ({src}) => {
     return (
         <div id="product-card" className="my-3">
             <Card className="pdt-card">
-                <ProductImg image={productImg} />
-
-                {/* <Images /> */}
+                <CustomImage
+                    src={src?src:productImg}
+                    classes={`product-img`}
+                />
                 <CardBody>
                     <CardTitle >
-                        <SubHeading subHeading={`Head Phone`} />
+                        <CustomSubHeading
+                            subName="Head Phone"
+                        />
                     </CardTitle>
-                    <h4><Heading id={`heading`} heading={`Smart Digital Watch`} /></h4>
+                    <CustomHeading
+                        classes={`heading`}
+                        hedName="Smart Digital Watch"
+                    />
                     <div className="d-flex align-items-center justify-content-between mb-3">
                         <div className="d-flex">
                             <RegularPrice regularPrice={`$223`} />
@@ -39,13 +45,7 @@ const ProductCard = () => {
                         btnIcon={faCartShopping}
                         btnText="Add to cart"
                         size='full'
-                        variant='secondary'
-                    />
-                    <CustomButton
-                    classes={'mt-5'}
-                        btnIcon={faCartShopping}
-                        btnText="Add to cart"
-                        variant='success'
+                        classes={`button`}
                     />
                 </CardBody>
             </Card>

@@ -66,18 +66,17 @@ text-decoration: none;
     color:  #FFB000;
 }
 
-#homeSlider{
-    
-.slick-dots li button:before{
-    content: '' !important;
-    width: 20px;
-    height: 5px !important;
-    background-color: white;
-    opacity: 1;
-    border-radius: 3px;
-}
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    background-color: #3C1FF4 !important;
-}
+#homeSlider{     
+    .slick-dots li button:before{
+        content: '' !important;
+        width: 20px;
+        height: 5px !important;
+        background-color: white;
+        opacity: 1;
+        border-radius: 3px;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        background-color: #3C1FF4 !important;
+    }
 }

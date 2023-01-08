@@ -15,9 +15,11 @@ const BottomNavbar = () => {
         <Fragment>
             <nav className="navbar-expand d-flex" id="navbar">
                 <div className="d-flex align-items-center department ">
-                    <Link className='text-dark' href="#"><FontAwesomeIcon icon={faBars}/></Link>
-                    <h5 className="px-2">Departments</h5>
-                    <FontAwesomeIcon icon={faAngleDown} />
+                    <div className='d-flex align-items-center'>
+                        <Link className='text-dark' href="#"><FontAwesomeIcon icon={faBars}/></Link>
+                        <h5 className="px-2 mb-0">Departments</h5>
+                        <FontAwesomeIcon icon={faAngleDown} />
+                    </div>
                     <span className="ps-4">|</span>
 
                     <div className="modal-area">

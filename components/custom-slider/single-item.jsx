@@ -12,7 +12,7 @@ const SingleItem = ({ hedName, subName, btnText, buttonAction, src }) => {
             <div className="container slick">
                 <div className="row d-flex align-items-center">
                     <div className="col-6">
-                        <CustomSubHeading subName={subName}/>
+                        <CustomSubHeading classes={'custom-slider-sub-heading'} subName={subName}/>
                         <CustomHeading classes={'custom-slider-heading'} hedName={hedName}/>
                         <div className="pt-3 d-flex align-items-center">
                             <div className='d-flex align-items-center'>
@@ -36,7 +36,7 @@ const SingleItem = ({ hedName, subName, btnText, buttonAction, src }) => {
                 </div>
                 <div className="circleArea">
                     <div className="circle">
-                        <h4>$:95</h4>
+                        <h4>$95</h4>
                     </div>
                 </div>
             </div>

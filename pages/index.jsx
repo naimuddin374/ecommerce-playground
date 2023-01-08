@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <Fragment>
             <CustomSlider />
-            <div className="py-5">
+            <div className="py-5">  
                 <div className='container'>
                     <div className="pb-3">
                         <SectionTitle hedName="Top Categories" subName="Categories"/>

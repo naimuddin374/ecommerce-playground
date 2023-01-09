@@ -3,7 +3,7 @@ import TopNavbar from "./top-navbar";
 
 const Header = () => {
     return (
-        <div className="sticky-top">
+        <div className="sticky-top shadow">
             <div className="container">  
                 <TopNavbar/>
                 <BottomNavbar />

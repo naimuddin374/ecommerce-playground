@@ -1,5 +1,4 @@
-import InputField from "./input-field"
-import LabelField from "./lable-field"
+
 import CustomInput from "../ui/custom-input"
 
 const CheckOutForm = ()=>{

@@ -7,6 +7,13 @@ import BestProducts from '../components/best-products'
 import CustomSlider from '../components/custom-slider'
 import SectionTitle from '../components/section-title'
 
+import CategoryCardImgA from "../assets/img/545245.png"
+import CategoryCardImgB from "../assets/img/headphone-headset-earphone-svgrepo-com 1.png"
+import CategoryCardImgC from "../assets/img/Group.png"
+import CategoryCardImgD from "../assets/img/Vector (1).png"
+import CategoryCardImgE from "../assets/img/Vector (4).png"
+
+
 export default function Home() {
     return (
         <Fragment>
@@ -16,11 +23,12 @@ export default function Home() {
                     <div className="pb-3">
                         <SectionTitle hedName="Top Categories" subName="Categories"/>
                     </div>
-                    <CategoryCard/>
-                    <CategoryCard/>
-                    <CategoryCard/>
-                    <CategoryCard/>
-                    <CategoryCard/>
+                    {/* {[...Array(5)].map(()=><CategoryCard/>)} */}
+                    <CategoryCard imgName={CategoryCardImgA} title="Mobile"/>
+                    <CategoryCard imgName={CategoryCardImgB} title="Headphone" />
+                    <CategoryCard imgName={CategoryCardImgC} title="Computer" />
+                    <CategoryCard imgName={CategoryCardImgD} title="Sounbox"/>
+                    <CategoryCard imgName={CategoryCardImgE} title="Camera"/>
                 </div>
             </div>
 
@@ -46,7 +54,12 @@ export default function Home() {
             </div>
 
             <div className="py-5">
-                <BestProducts />
+                <div className='container'>
+                    <div className="">
+                        <SectionTitle hedName="Best Selling Products" subName="Nest"/>
+                    </div>
+                    <BestProducts />
+                </div>
             </div>
 
             <div className="py-5">

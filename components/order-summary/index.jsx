@@ -6,7 +6,7 @@ const OrderSummary = ()=>{
     return(
         <div id="OrderSummary">
             <div className="py-4">
-                <CustomHeading classes={'order-summary-heading'} hedName="Order Summary"/>
+                <CustomHeading classes={'order-summary-heading ps-4'} hedName="Order Summary"/>
             </div>
             <hr/>
             <div className="px-4 pb-4">

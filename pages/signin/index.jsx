@@ -1,27 +1,14 @@
 import Link from "next/link";
 import Breadcrumb from "../../components/breadcrumb";
 import CustomInput from "../../components/ui/custom-input";
-import { useState } from 'react';
+import useAuth from "../../hooks/useAuth";
 
 
 
 const SignIn = () => {
-    const [state, setState] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-        confirmPassword: ''
-      })
-    
-    
-      const changeHandler = (e) => {
-        setState({
-          [e.target.name]: e.target.value
-        })
-      }
-    
-    
+    const { changeHandler, state, loading, handleLogin } = useAuth()
+
+
     return (
         <div id="signin">
             <Breadcrumb />
@@ -55,9 +42,7 @@ const SignIn = () => {
                         </div>
 
                         <div className="pt-5">
-                            <Link href="#">
-                                <button className="last">Sign in</button>
-                            </Link>
+                            <button className="last" onClick={handleLogin}>Sign in</button>
                         </div>
 
                         <div className="account pt-5">

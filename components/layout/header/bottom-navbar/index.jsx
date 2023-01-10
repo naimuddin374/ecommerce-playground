@@ -67,7 +67,7 @@ const BottomNavbar = () => {
                     <ul className="navbar-nav "> 
                         <li className="nav-item"><Link className="nav-link px-3" href='/'>Home</Link></li>
                         <li className="nav-item"><Link className="nav-link px-3" href='#'>About</Link></li>
-                        <li className="nav-item"><Link className="nav-link px-3" href='shop'>Shop</Link></li>
+                        <li className="nav-item"><Link className="nav-link px-3" href='/shops'>Shop</Link></li>
                         <li className="nav-item"><Link className="nav-link px-3" href='#'>Account</Link></li>
                         <li className="nav-item"><Link className="nav-link px-3" href='#'>Contact</Link></li>
                     </ul>

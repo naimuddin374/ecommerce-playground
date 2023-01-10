@@ -11,16 +11,16 @@ const RelatedProduct = () => {
             />
             <div className="row">
                 <div className="col-3">
-                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard id={1} heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard id={2} heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard id={3} heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
                 <div className="col-3">
-                    <ProductCard heading={'Smart Digital Watch'} title={'Head Phone'} />
+                    <ProductCard id={4} heading={'Smart Digital Watch'} title={'Head Phone'} />
                 </div>
             </div>
         </div>

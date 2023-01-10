@@ -27,7 +27,7 @@ const ProductCard = ({src}) => {
                         />
                     </CardTitle>
                     <CustomHeading
-                        actionLink={`/shop/${id}`}
+                        actionLink={`/shops/${id}`}
                         classes={`heading`}
                         hedName="Smart Digital Watch"
                     />

@@ -1,9 +1,11 @@
 import { useStoreActions, useStoreState } from "easy-peasy";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import api from "../service";
+import jwtDecode from "jwt-decode";
 
 const useAuth = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [state, setState] = useState({});
   const [error, setError] = useState(null);
 
@@ -21,21 +23,36 @@ const useAuth = () => {
   };
 
   // handle login
-  const handleLogin = () => {
-    console.log("state", state);
+  const handleLogin = async () => {
     const { email, password } = state;
-    if (email && password) {
+
+    try {
+      if (!email || !password) {
+        setError("Email & password is required field!");
+      }
+      setLoading(true);
       setError(null);
+
+      const formData = {
+        email: email,
+        password: password,
+        // firstName,
+        // lastName,
+        // contact: '01754540123'
+      };
+      const response = await api.post("/auth/login", formData);
+      const token = response.data.data;
+      const user = jwtDecode(token);
       authActions.login({
-        user: {
-          email,
-          password,
-        },
-        token: "Bearer Token",
+        user,
+        token,
       });
       router.push("/");
-    } else {
-      setError("Email & password is required field!");
+    } catch (error) {
+      setError(error.response.data.message);
+      console.log("error", error);
+    } finally {
+      setLoading(false);
     }
   };
 

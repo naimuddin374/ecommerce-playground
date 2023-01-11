@@ -6,7 +6,7 @@ import useAuth from "../../hooks/useAuth";
 
 
 const SignIn = () => {
-    const { changeHandler, state, loading, handleLogin } = useAuth()
+    const { changeHandler, state, loading, handleLogin, error } = useAuth()
 
 
     return (
@@ -15,6 +15,7 @@ const SignIn = () => {
             <div className="container">
                 <div className="signin-box py-4  mx-auto"> <h5 className="text-center">Sign in</h5>
                     <hr />
+                    {error && <h3 className="ps-5 text-danger">{error}</h3>}
                     <div className="py-3 from-area">
                         <CustomInput
                             type={'email'}
@@ -42,7 +43,7 @@ const SignIn = () => {
                         </div>
 
                         <div className="pt-5">
-                            <button className="last" onClick={handleLogin}>Sign in</button>
+                            <button className="last" onClick={!loading && handleLogin}>{loading ? 'Loading...' : 'Sign in'}</button>
                         </div>
 
                         <div className="account pt-5">

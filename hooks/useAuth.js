@@ -29,6 +29,7 @@ const useAuth = () => {
     try {
       if (!email || !password) {
         setError("Email & password is required field!");
+        return;
       }
       setLoading(true);
       setError(null);
@@ -64,29 +65,48 @@ const useAuth = () => {
 
   // handle new user registration
   const handleRegistration = async () => {
-    const { firstName, lastName, email, contact, password } = state
+    const { firstName, lastName, email, contact, password, confirmPassword } =
+      state;
+
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !password ||
+      !confirmPassword ||
+      !contact
+    ) {
+      setError("Please input all required fields!");
+      return;
+    } else if (isNaN(contact)) {
+      setError("Contact number must be a numeric value!");
+      return;
+    } else if (contact.length !== 11) {
+      setError("Contact number is not a valid number!");
+      return;
+    } else if (password !== confirmPassword) {
+      setError("Confirm password doesn't match!");
+      return;
+    }
+    setError(null);
 
     try {
-      if (!email || !password) {
-        setError("Email & Password is requird faild!")
-      }
-      setError(null)
-
       const registrationData = {
         firstName,
         lastName,
         email,
-        contact:1234,
-        password
-      }
+        contact: 1234,
+        password,
+      };
 
-      const response = await api.post("/auth/register", registrationData)
+      const response = await api.post("/auth/register", registrationData);
+      console.log("response", response.data);
       // const resData = response.data.data
 
-      router.push("/signin")
-    }
-    catch (error) {
-      console.log("error", error)
+      router.push("/signin");
+    } catch (error) {
+      setError(error.response.data.message);
+      console.log("error", error);
     }
   };
 

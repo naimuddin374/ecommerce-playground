@@ -8,7 +8,7 @@ import useAuth from "../../hooks/useAuth";
 
 const SignUp = () => {
 
-  const {state,changeHandler,handleRegistration}=useAuth()
+  const { state, error, changeHandler, handleRegistration } = useAuth()
 
   // const [state, setState] = useState({
   //   firstName: '',
@@ -31,6 +31,8 @@ const SignUp = () => {
       <div className="container">
         <form className="signup-box mx-auto">
           <h5 className="">Sign Up</h5>
+          <hr/>
+          {error && <h3 className="ps-5 text-danger">{error}</h3>}
 
           <CustomInput
             type={'input'}
@@ -55,19 +57,26 @@ const SignUp = () => {
             value={state.email}
           />
           <CustomInput
+            type={'text'}
+            label={'Contact Number'}
+            name='contact'
+            changeHandler={changeHandler}
+            value={state.contact}
+          />
+          <CustomInput
             type={'password'}
             label={'Password'}
             name='password'
             changeHandler={changeHandler}
             value={state.password}
           />
-          {/* <CustomInput
-            type={'confirmPassword'}
-            label={'Confirm Password'}
-            name='password'
+          <CustomInput
+            type='password'
+            label='Confirm Password'
+            name='confirmPassword'
             changeHandler={changeHandler}
             value={state.confirmPassword}
-          /> */}
+          />
 
           <div className="text">
             <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described inour privacy policy.</p>

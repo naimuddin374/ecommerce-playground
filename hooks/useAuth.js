@@ -63,7 +63,32 @@ const useAuth = () => {
   };
 
   // handle new user registration
-  const handleRegistration = () => {};
+  const handleRegistration = async () => {
+    const { firstName, lastName, email, contact, password } = state
+
+    try {
+      if (!email || !password) {
+        setError("Email & Password is requird faild!")
+      }
+      setError(null)
+
+      const registrationData = {
+        firstName,
+        lastName,
+        email,
+        contact:1234,
+        password
+      }
+
+      const response = await api.post("/auth/register", registrationData)
+      // const resData = response.data.data
+
+      router.push("/signin")
+    }
+    catch (error) {
+      console.log("error", error)
+    }
+  };
 
   return {
     state,

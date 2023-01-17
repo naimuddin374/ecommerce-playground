@@ -1,21 +1,32 @@
 import Link from "next/link";
+import { useState } from "react";
+
 import Breadcrumb from "../../components/breadcrumb";
 import CustomInput from "../../components/ui/custom-input";
-import useAuth from "../../hooks/useAuth";
+import CustomButton from "../../components/ui/custom-button"
+
 
 
 
 const ForgetPassword = () => {
-    const { changeHandler, state, loading, handleLogin, error } = useAuth()
-
-
+    
+    const [state, setState] = useState({
+        email: '',
+        password: '',
+    })
+      
+    const changeHandler = (e) => {
+        setState({
+        [e.target.name]: e.target.value
+        })
+    }
     return (
         <div id="signin">
             <Breadcrumb />
             <div className="container">
-                <div className="signin-box py-4  mx-auto"> <h5 className="text-center">Forget Password</h5>
+                <div className="signin-box py-4  mx-auto">
+                    <h5 className="text-center">Forget Password</h5>
                     <hr />
-                    {error && <h3 className="ps-5 text-danger">{error}</h3>}
                     <div className="py-3 from-area">
                         <CustomInput
                             type={'email'}
@@ -24,26 +35,27 @@ const ForgetPassword = () => {
                             changeHandler={changeHandler}
                             value={state.email}
                         />
-                       
 
-                        {/* <div className="box pt-3 d-flex justify-content-between text-muted">
-                            <div className="d-flex">
-                                <input type="checkbox" />
-                                <div className="remember">
-                                    <h5 className="ms-2">Remember Me</h5>
-                                </div>
-                            </div>
-                            <h5 className="forgotten">Forgotten password?</h5>
-                        </div> */}
+                        <CustomInput
+                            type={"password"}
+                            label={'Reset Password'}
+                            name='password'
+                            changeHandler={changeHandler}
+                            value={state.password}
+                        />
 
                         <div className="pt-5">
-                            <button className="last" onClick={!loading && handleLogin}>{loading ? 'Loading...' : 'Next'}</button>
+                            <CustomButton classes={'primary-outline-btn'} btnText={'Reset Password'}/>
                         </div>
 
                         <div className="account pt-5">
                             <h4>Don't have an account? </h4>
                         </div>
-                        <Link className="btn mt-3 w-100 auth-button d-flex align-items-center justify-content-center" href="/signup">Sign Up</Link>
+                        <div className="pt-3">
+                            <Link href={"/signin"}>
+                                <CustomButton classes={'white-outline-btn'} type="submit" btnText="Sign In" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Breadcrumb from "../../components/breadcrumb";
 import CustomInput from "../../components/ui/custom-input";
+import CustomButton from "../../components/ui/custom-button";
+import Checkbox from "../../components/checkbox"
 import useAuth from "../../hooks/useAuth";
 
 
 
 const SignIn = () => {
     const { changeHandler, state, loading, handleLogin, error } = useAuth()
-
 
     return (
         <div id="signin">
@@ -16,7 +17,7 @@ const SignIn = () => {
                 <div className="signin-box py-4  mx-auto"> <h5 className="text-center">Sign in</h5>
                     <hr />
                     {error && <h3 className="ps-5 text-danger">{error}</h3>}
-                    <div className="py-3 from-area">
+                    <form onSubmit={handleLogin} className="py-3 from-area">
                         <CustomInput
                             type={'email'}
                             label={'Email'}
@@ -31,26 +32,24 @@ const SignIn = () => {
                             changeHandler={changeHandler}
                             value={state.password}
                         />
-
                         <div className="box pt-3 d-flex justify-content-between text-muted">
-                            <div className="d-flex">
-                                <input type="checkbox" />
-                                <div className="remember">
-                                    <h5 className="ms-2">Remember Me</h5>
-                                </div>
-                            </div>
-                            <h5 className="forgotten">Forgotten password?</h5>
+                            <Checkbox type="checkbox" CheckId="checkbox" name="Remember Me" />
+                            <Link className="forgotten text-muted" href="#">Forgotten password?</Link>
                         </div>
 
                         <div className="pt-5">
-                            <button className="last" onClick={!loading && handleLogin}>{loading ? 'Loading...' : 'Sign in'}</button>
+                            <button type="submit" className="last" >{loading ? 'Loading...' : 'Sign in'}</button>
                         </div>
 
-                        <div className="account pt-5">
+                        <div className="account text-center text-muted pt-5">
                             <h4>Don't have an account? </h4>
                         </div>
-                        <Link className="btn mt-3 w-100 auth-button d-flex align-items-center justify-content-center" href="/signup">Sign Up</Link>
-                    </div>
+                        <Link href={"/signup"}>
+                            <CustomButton classes={'white-outline-btn'} btnText="Sign Up" />
+                        </Link>
+                        
+                        {/* <Link className="white-outline-btn" href="/signup">Sign Up</Link> */}
+                    </form>
                 </div>
             </div>
         </div>

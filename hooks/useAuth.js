@@ -23,17 +23,19 @@ const useAuth = () => {
   };
 
   // handle login
-  const handleLogin = async () => {
+  const handleLogin = async (e) => {
+    e.preventDefault()
     const { email, password } = state;
+    if (loading) return;
+
+    if (!email || !password) {
+      setError("Email & password is required field!");
+      return;
+    }
+    setLoading(true);
+    setError(null);
 
     try {
-      if (!email || !password) {
-        setError("Email & password is required field!");
-        return;
-      }
-      setLoading(true);
-      setError(null);
-
       const formData = {
         email: email,
         password: password,
@@ -64,7 +66,8 @@ const useAuth = () => {
   };
 
   // handle new user registration
-  const handleRegistration = async () => {
+  const handleRegistration = async (e) => {
+    e.preventDefault()
     const { firstName, lastName, email, contact, password, confirmPassword } =
       state;
 

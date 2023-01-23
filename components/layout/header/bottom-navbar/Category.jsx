@@ -1,7 +1,7 @@
-import ModelManuItem from "./model-manu-item";
+import ModelManuItem from "./modal-menu-item";
 import ModelManuItemImgA from "../../../../assets/img/product-40 1.png"
 import useData from "../../../../hooks/useData";
-
+import Link from "next/link";
 
 
 const Category = () => {
@@ -18,7 +18,7 @@ const Category = () => {
     }
 
     return (
-        <div className="modal-area">
+        <Link href="#" className="modal-area">
             <div className='row p-4'>
                 {data && data.length > 0 && data.map(row =>
                     <div className='col-4 text-center' key={row._id}>
@@ -28,7 +28,7 @@ const Category = () => {
                         />
                     </div>)}
             </div>
-        </div>
+        </Link>
     )
 }
 export default Category;

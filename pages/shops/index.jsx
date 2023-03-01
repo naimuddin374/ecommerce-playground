@@ -1,7 +1,7 @@
-import FilterBar from "../../components/shop-bar"
+import ShopBar from "../../components/shop-bar"
 import ProductCard from "../../components/product-card"
 import Pagination from "../../components/pagination"
-import ShopBar from '../../components/filter-bar';
+import FilterBar from '../../components/filter-bar';
 import Breadcrumb from "../../components/breadcrumb";
 
 const Shop = () => {
@@ -13,10 +13,10 @@ const Shop = () => {
             />
             <div className="row">
                 <div className="col-3">
-                    <ShopBar />
+                    <FilterBar />
                 </div>
                 <div className="col-9 mt-2 p-5">
-                    <FilterBar />
+                    <ShopBar />
                     <div className="mt-3">
                         <div className="row">
                             <div className="col-3">

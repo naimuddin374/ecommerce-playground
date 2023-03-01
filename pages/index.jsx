@@ -8,55 +8,62 @@ import CustomSlider from '../components/custom-slider'
 import SectionTitle from '../components/section-title'
 
 import CategoryCardImgA from "../assets/img/545245.png"
-import CategoryCardImgB from "../assets/img/headphone-headset-earphone-svgrepo-com 1.png"
-import CategoryCardImgC from "../assets/img/Group.png"
-import CategoryCardImgD from "../assets/img/Vector (1).png"
-import CategoryCardImgE from "../assets/img/Vector (4).png"
+import useData from '../hooks/useData'
 
 
 export default function Home() {
+
+    const { loading, data: categories } = useData('/categories');
+
+    if (loading) {
+        return (
+            <div className="modal-area">
+                <div className='row p-4'>
+                    Loading...
+                </div>
+            </div>
+        )
+    }
+
     return (
         <Fragment>
             <CustomSlider />
-            <div className="py-5">  
+            <div className="py-5">
                 <div className='container'>
                     <div className="pb-3">
-                        <SectionTitle hedName="Top Categories" subName="Categories"/>
+                        <SectionTitle hedName="Top Categories" subName="Categories" />
                     </div>
-                    {/* {[...Array(5)].map(()=><CategoryCard/>)} */}
-                    <CategoryCard imgName={CategoryCardImgA} title="Mobile"/>
-                    <CategoryCard imgName={CategoryCardImgB} title="Headphone" />
-                    <CategoryCard imgName={CategoryCardImgC} title="Computer" />
-                    <CategoryCard imgName={CategoryCardImgD} title="Sounbox"/>
-                    <CategoryCard imgName={CategoryCardImgE} title="Camera"/>
+                    {loading ? <h1>Loading...</h1> : categories.length > 0 && <>
+                        {categories.map(row => <CategoryCard key={row._id} imgName={CategoryCardImgA} title={row.name} />)}
+                    </>}
                 </div>
             </div>
 
             <div className="py-5">
                 <div className='container'>
                     <div className="pb-3">
-                        <SectionTitle hedName="Trending Products" subName="Categories"/>
+                        <SectionTitle hedName="Trending Products" subName="Categories" />
                     </div>
                     <div>
-                        <TrandingProductCard/>
-                        <TrandingProductCard/>
-                        <TrandingProductCard/>
-                        <TrandingProductCard/>
-                        <TrandingProductCard/>
+                        <TrandingProductCard />
+                        <TrandingProductCard />
+                        <TrandingProductCard />
+                        <TrandingProductCard />
+                        <TrandingProductCard />
                     </div>
                 </div>
             </div>
 
             <div>
                 <div className="container">
-                    <Banner/>
+                    <Banner />
                 </div>
             </div>
 
             <div className="py-5">
                 <div className='container'>
                     <div className="">
-                        <SectionTitle hedName="Best Selling Products" subName="Nest"/>
+                        <SectionTitle hedName="Best Selling Products" subName="Nest" />
                     </div>
                     <BestProducts />
                 </div>

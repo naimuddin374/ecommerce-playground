@@ -3,6 +3,7 @@ import { Input } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, } from '@fortawesome/free-solid-svg-icons'
 import useData from '../../hooks/useData'
+import Link from 'next/link'
 
 
 const FilterCategory = () => {
@@ -28,7 +29,7 @@ const FilterCategory = () => {
                 categories.length > 0 && categories.map((cat, index) =>
                     <div className="accordion-item" key={cat._id}>
                         <div className={open === index ? "accordion-header active" : "accordion-header"} onClick={() => setOpen(index)}>
-                            <button className="accordion-button">
+                            <button className="accordion-button shadow-none">
                                 {cat.name}
                             </button>
                         </div>
@@ -49,7 +50,7 @@ const FilterCategory = () => {
                                         </div>
                                         <div className="sub-categories p-3">
                                             {getSubcategories(cat._id).map(scat =>
-                                                <p key={scat._id}>{scat.name} {/*<span>1</span>*/}</p>
+                                                <p key={scat._id}><Link href="#">{scat.name} </Link>{/*<span>1</span>*/}</p>
                                             )}
                                         </div>
                                     </>}

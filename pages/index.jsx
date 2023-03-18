@@ -33,7 +33,7 @@ export default function Home() {
                     <div className="pb-3">
                         <SectionTitle hedName="Top Categories" subName="Categories" />
                     </div>
-                    {loading ? <h1>Loading...</h1> : categories.length > 0 && <>
+                    {loading ? <h1>Loading...</h1> : categories?.length > 0 && <>
                         {categories.map(row => <CategoryCard key={row._id} imgName={CategoryCardImgA} title={row.name} />)}
                     </>}
                 </div>

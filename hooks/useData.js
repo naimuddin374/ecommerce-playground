@@ -11,7 +11,12 @@ const useData = (baseurl) => {
 
   //   Global States
   const dataState = useStoreState((state) => state.data.data);
-
+  // const dataState = {
+  //   "/api/categories": [10, 12],
+  //   "/api/subcategories": [20, 22],
+  //   "/api/products": [30, 32],
+  //   "/api/tags": [33, 25, 34]
+  // }
   // Global Actions
   const dataActions = useStoreActions((action) => action.data);
 
@@ -20,7 +25,7 @@ const useData = (baseurl) => {
     try {
       const response = await api.get(customUrl);
       dataActions.setData({
-        key: baseurl,
+        key: customUrl,
         value: response.data.data,
       });
     } catch (error) {

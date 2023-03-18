@@ -7,27 +7,44 @@
         background-color: $LightColor;
         margin-left: 15px;
 
-        .category-search {
-            border: 1px solid rgba(53, 119, 240, 0.75);
-            border-radius: 3px 0px 0px 3px;
-
-            Input {
-                border: none;
+        .accordion-item {
+            .accordion-button {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: rgba(0, 0, 0, 0.62);
+                background: #FFFFFF;
             }
 
-            .searchIcon {
-                color: rgba(0, 0, 0, 0.35);
-                font-size: 20px;
+            .category-search {
+                border: 1px solid rgba(53, 119, 240, 0.75);
+                border-radius: 3px 0px 0px 3px;
+
+                input {
+                    outline: none;
+                    border: none;
+                }
+
+                .searchIcon {
+                    color: rgba(0, 0, 0, 0.35);
+                    font-size: 20px;
+                }
             }
-        }
 
-        .sub-categories {
-            p {
-                display: flex;
-                justify-content: space-between;
-
+            .sub-categories {
+                a {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 136.6%;
+                    color: rgba(0, 0, 0, 0.8);
+                    list-style: none;
+                    text-decoration: none;
+                }
             }
-
         }
 
     }

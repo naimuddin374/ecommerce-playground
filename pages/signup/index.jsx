@@ -12,21 +12,6 @@ const SignUp = () => {
   const [conFirmPass, setConFirmPass] = useState(false)
   const { state, error, changeHandler, handleRegistration } = useAuth()
 
-  // const [state, setState] = useState({
-  //   firstName: '',
-  //   lastName: '',
-  //   email: '',
-  //   password: '',
-  //   confirmPassword: ''
-  // })
-
-
-  // const changeHandler = (e) => {
-  //   setState({
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
-
   return (
     <div id="signup">
       <Breadcrumb />

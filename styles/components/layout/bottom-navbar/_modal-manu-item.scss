@@ -1,20 +1,21 @@
-
-
-#modelManuItem{
+#modelManuItem {
     background: #FEFEFE;
-    border: 0.5px solid rgba(0, 0, 0, 0.17);    
+    border: 0.5px solid rgba(0, 0, 0, 0.17);
     margin: 10px;
-    &:hover{
+
+    &:hover {
         background-color: blue;
         color: white;
         transition: all 0.5s;
     }
 }
-.modelsLink{
+
+.modelsLink {
     text-decoration: none;
     color: black;
 }
-.Model-manu-item-img{
+
+.Model-manu-item-img {
     width: 130px;
     height: 130px;
 }

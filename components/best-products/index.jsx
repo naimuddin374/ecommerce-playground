@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 import Image from "next/image";
-import BestProductsImgA from "../../assets/img/product-39 1.png";
-import BestProductsImgB from "../../assets/img/product-38.png";
-import BestProductsImgC from "../../assets/img/laptop (1).png";
+// import BestProductsImgA from "../../assets/img/product-39 1.png";
+// import BestProductsImgB from "../../assets/img/product-38.png";
+// import BestProductsImgC from "../../assets/img/laptop (1).png";
 import StarRating from "../star-rating";
 import Heading from "../heading";
 
@@ -19,7 +19,7 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={BestProductsImgA} />
+                <Image className="w-100 h-auto" src={''} />
               </a>
             </div>
             <div className="card-body">
@@ -50,7 +50,7 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={BestProductsImgB} />
+                <Image className="w-100 h-auto" src={''} />
               </a>
             </div>
             <div className="card-body">
@@ -81,7 +81,7 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={BestProductsImgC} />
+                <Image className="w-100 h-auto" src={''} />
               </a>
             </div>
             <div className="card-body">
@@ -111,7 +111,7 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={BestProductsImgC} />
+                <Image className="w-100 h-auto" src={''} />
               </a>
             </div>
             <div className="card-body">
@@ -136,7 +136,7 @@ const BestProducts = () => {
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   );

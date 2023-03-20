@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import sliderImgA from "../../assets/img/banner-mockup 1.png"
-import sliderImgB from "../../assets/img/product-39 1.png"
+// import sliderImgB from "../../assets/img/product-39 1.png"
 import SingleItem from './single-item';
 
 function CustomSlider() {
@@ -33,7 +33,7 @@ function CustomSlider() {
           subName='Hot Deal In This Week'
           btnText='Buy Now'
           buttonAction='/'
-          src={sliderImgB}
+          src={''}
         />
         <SingleItem
           hedName='Intelectial Digital Computer 03'
@@ -47,7 +47,7 @@ function CustomSlider() {
           subName='Hot Deal In This Week'
           btnText='Buy Now'
           buttonAction='/'
-          src={sliderImgB}
+          src={''}
         />
       </Slider>
     </div>

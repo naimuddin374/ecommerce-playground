@@ -2,10 +2,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import sliderImgA from "../../assets/img/banner-mockup 1.png"
-// import sliderImgB from "../../assets/img/product-39 1.png"
 import SingleItem from './single-item';
+import useData from "../../hooks/useData";
 
 function CustomSlider() {
+
+  const { loading, data } = useData('/sliders');
+  console.log(data)
+
 
   const settings = {
     dots: true,
@@ -21,34 +25,16 @@ function CustomSlider() {
     <div className="py-5" id="homeSlider">
       <Slider {...settings}>
 
-        <SingleItem
-          hedName='Intelectial Digital Computer 01'
-          subName='Hot Deal In This Week'
-          btnText='Buy Now'
-          buttonAction='/'
-          src={sliderImgA}
-        />
-        <SingleItem
-          hedName='Smart Digital Watch 02'
-          subName='Hot Deal In This Week'
-          btnText='Buy Now'
-          buttonAction='/'
-          src={''}
-        />
-        <SingleItem
-          hedName='Intelectial Digital Computer 03'
-          subName='Hot Deal In This Week'
-          btnText='Buy Now'
-          buttonAction='/'
-          src={sliderImgA}
-        />
-        <SingleItem
-          hedName='Smart Digital Watch 04'
-          subName='Hot Deal In This Week'
-          btnText='Buy Now'
-          buttonAction='/'
-          src={''}
-        />
+        {data && data.length > 0 && data.map(row =>
+          <SingleItem
+            hedName={row.name}
+            subName='Hot Deal In This Week'
+            btnText='Buy Now'
+            buttonAction='/'
+            src={sliderImgA}
+          />
+        )}
+
       </Slider>
     </div>
   );

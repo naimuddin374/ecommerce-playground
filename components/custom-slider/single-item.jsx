@@ -6,6 +6,7 @@ import CustomHeading from "../ui/custom-heading"
 import CustomButton from "../ui/custom-button"
 import CustomImage from "../ui/custom-image"
 
+
 const SingleItem = ({ hedName, subName, btnText, buttonAction, src }) => {
     return (
         <div className="slider" >
@@ -18,7 +19,6 @@ const SingleItem = ({ hedName, subName, btnText, buttonAction, src }) => {
                             <div className='d-flex align-items-center'>
                                 <Link href={buttonAction}>
                                     <CustomButton classes={'buyNow'} btnText={btnText}/>
-                                    {/* <button className="buyNow">{buttonText}</button> */}
                                 </Link>
 
                                 <div className='float-left ps-4 align-items-center'>

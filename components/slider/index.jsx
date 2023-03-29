@@ -50,7 +50,7 @@ function Slidr() {
             </div>
           </div>
         </div>
-        <div className="slider" >
+        {/* <div className="slider" >
           <div className="container slick">
             <div className="row d-flex align-items-center">
               <div className="col-6">
@@ -80,8 +80,8 @@ function Slidr() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="slider" >
+        </div> */}
+        {/* <div className="slider" >
           <div className="container slick">
             <div className="row d-flex align-items-center">
               <div className="col-6">
@@ -111,7 +111,7 @@ function Slidr() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

@@ -35,7 +35,7 @@ const HeaderAction = () => {
                         <DropdownItem>My Point</DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem >
-                            <p type='button' className='w-100 logoutBtn'/* onClick={handleLogout}*/>LogOut</p>
+                            <p type='button' className='w-100 logoutBtn' onClick={handleLogout}>LogOut</p>
                         </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown> :

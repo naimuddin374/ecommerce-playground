@@ -8,8 +8,8 @@ import useAuth from "../../hooks/useAuth";
 
 
 const SignIn = () => {
-    const { changeHandler, state, loading, handleLogin, error } = useAuth()
-
+    const { changeHandler, state, error, loading, handleLogin } = useAuth()
+    
     return (
         <div id="signin">
             <Breadcrumb />
@@ -33,8 +33,13 @@ const SignIn = () => {
                             value={state.password}
                         />
                         <div className="box pt-3 d-flex justify-content-between text-muted">
-                            <Checkbox type="checkbox" CheckId="checkbox" name="Remember Me" />
-                            <Link className="forgotten text-muted" href="#">Forgotten password?</Link>
+                            <div className="d-flex">
+                                <input type="checkbox" />
+                                <div className="remember">
+                                    <h5 className="ms-2">Remember Me</h5>
+                                </div>
+                            </div>
+                       z     <h5 className="forgotten">Forgotten password?</h5>
                         </div>
 
                         <div className="pt-5">

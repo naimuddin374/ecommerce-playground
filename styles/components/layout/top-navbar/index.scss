@@ -6,30 +6,30 @@
     padding-top: 20px;
     padding-bottom: 13px;
     line-height: 50px;
-
+    
     #top-search {
         border: 1px solid $primaryColor;
         height: 51px;
         line-height: 50px;
         padding-left: 11px;
-
+        
         .search-input-icon {
             line-height: 55px;
         }
-
+        
         .search-bar-input {
             border: none;
             outline: none;
             height: 49px;
             margin-top: -10px;
             width: 700px;
-
+            
             &:focus {
                 outline: none;
                 box-shadow: none;
             }
         }
-
+        
         .search-bar-button {
             background-color: $primaryColor;
             color: '#fff';
@@ -41,36 +41,36 @@
 }
 
 .header-icon {
-
+    
     svg {
         font-size: 24px;
         margin: 0 10px;
     }
-
+    
     .header-action-icon {
         color: black;
     }
-
+    
     .dropdown {
         margin-left: 13px;
-
+        
         .dropdown-toggle {
             background-color: $LightColor;
             color: black;
         }
-
+        
         .dropdown-menu {
             .dropdown-item {
                 line-height: 18px !important;
                 font-size: 16px;
             }
         }
-
+        
         .dropdown-item:focus,
         .dropdown-item:hover {
             background-color: transparent;
         }
-
+        
         .logoutBtn {
             border: none;
             background-color: $LightColor;
@@ -88,7 +88,17 @@
 
 .tpo-header-icon {
     position: relative;
-
+    text-decoration: none;
+    position: relative;
+    .cartHover{
+        position: absolute;
+        display: none;
+    }
+    &:hover{
+        .cartHover{
+            display: block;
+        }
+    }
     .add-items {
         position: absolute;
         right: 0;
@@ -98,7 +108,7 @@
         border-radius: 50px;
         background-color: #0d6efd;
         ;
-
+        
         small {
             position: relative;
             top: -19px;
@@ -106,7 +116,8 @@
             color: white;
             font-size: 11px;
         }
-
+        
     }
-
+    
+    
 }

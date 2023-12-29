@@ -1,6 +1,6 @@
-import { Input, Label } from 'reactstrap'
-import StarRating from '../star-rating'
+import { Input } from 'reactstrap'
 import Checkbox from '../checkbox'
+import StarRating from '../star-rating'
 import FilterCategory from './filter-category'
 
 
@@ -28,26 +28,26 @@ const FilterBar = () => {
                     <div className="size mt-5">
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             heading={`Size`}
                             name={`XXL`}
                             CheckId={`13`}
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`XL`}
                             CheckId={`12`}
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`L`}
                             CheckId={`14`}
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`M`}
                             CheckId={`16`}
                         />
@@ -58,7 +58,7 @@ const FilterBar = () => {
                     <div className="brand mt-5">
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             heading={`brand`}
                             name={`Apple`}
                             CheckId={`21`}
@@ -66,21 +66,21 @@ const FilterBar = () => {
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`Samsung`}
                             CheckId={`22`}
 
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`Realme`}
                             CheckId={`23`}
 
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`Nokia`}
                             CheckId={`24`}
                         />
@@ -90,11 +90,11 @@ const FilterBar = () => {
                     <div className="Rating mt-5">
                         <h4>Rating</h4>
                         <div>
-                            <StarRating rating={''} />
-                            <StarRating rating={'And Up'} />
-                            <StarRating rating={'And Up'} />
-                            <StarRating rating={'And Up'} />
-                            <StarRating rating={'And Up'} />
+                            <StarRating />
+                            <StarRating />
+                            <StarRating />
+                            <StarRating />
+                            <StarRating />
 
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const FilterBar = () => {
                     <div className="color-family mt-5">
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             heading={`Color-Family`}
                             name={`Red`}
                             CheckId={`17`}
@@ -111,20 +111,20 @@ const FilterBar = () => {
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`White`}
                             CheckId={`18`}
 
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`Green`}
                             CheckId={`19`}
                         />
                         <Checkbox
                             type={`checkbox`}
-                            className={`checkbox`}
+                            classes={`checkbox`}
                             name={`Blue`}
                             CheckId={`20`}
                         />

@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Image from "next/image";
-// import BestProductsImgA from "../../assets/img/product-39 1.png";
+import BestProductsImgA from "../../assets/img/laptop (1).png";
 // import BestProductsImgB from "../../assets/img/product-38.png";
 // import BestProductsImgC from "../../assets/img/laptop (1).png";
-import StarRating from "../star-rating";
 import Heading from "../heading";
+import StarRating from "../star-rating";
+import CustomImage from "../ui/custom-image";
 
 const BestProducts = () => {
   return (
@@ -19,7 +19,10 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={''} />
+                <CustomImage
+                  src={BestProductsImgA.src}
+                  classes={"w-100 h-auto"}
+                />
               </a>
             </div>
             <div className="card-body">
@@ -50,7 +53,10 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={''} />
+                <CustomImage
+                  src={BestProductsImgA.src}
+                  classes={"w-100 h-auto"}
+                />
               </a>
             </div>
             <div className="card-body">
@@ -64,7 +70,7 @@ const BestProducts = () => {
                   </strong>
                 </div>
 
-                <StarRating StarRating="(96%)" />
+                <StarRating />
               </div>
               <a
                 className="buttonArea text-decoration-none d-flex justify-content-center align-items-center "
@@ -81,7 +87,10 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={''} />
+                <CustomImage
+                  src={BestProductsImgA.src}
+                  classes={"w-100 h-auto"}
+                />
               </a>
             </div>
             <div className="card-body">
@@ -111,7 +120,10 @@ const BestProducts = () => {
           <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
               <a href="#">
-                <Image className="w-100 h-auto" src={''} />
+                <CustomImage
+                  src={BestProductsImgA.src}
+                  classes={"w-100 h-auto"}
+                />
               </a>
             </div>
             <div className="card-body">

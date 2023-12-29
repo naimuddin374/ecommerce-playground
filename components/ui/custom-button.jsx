@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'reactstrap';
 
 
@@ -12,6 +12,7 @@ const CustomButton = ({ classes, btnText, btnAction, btnIcon, type, variant, siz
         danger: 'btn-danger',
         success: 'btn-success',
         warning: 'btn-warning',
+        light: 'btn-light'
     }
     const sizes = {
         small: 'btn-sm',

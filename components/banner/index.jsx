@@ -1,8 +1,8 @@
-import CustomSubHeading from "../ui/custom-sub-heading";
-import CustomHeading from "../ui/custom-heading";
-import CustomButton from "../ui/custom-button";
-import CustomImage from "../ui/custom-image";
 import BennerImg from "../../assets/img/poster-03 1.png";
+import CustomButton from "../ui/custom-button";
+import CustomHeading from "../ui/custom-heading";
+import CustomImage from "../ui/custom-image";
+import CustomSubHeading from "../ui/custom-sub-heading";
 
 const Bannar = () => {
   return (
@@ -25,7 +25,7 @@ const Bannar = () => {
           />
         </div>
         <div className="col-6 text-center">
-          <CustomImage src={BennerImg} />
+          <CustomImage src={BennerImg.src} />
         </div>
       </div>
     </div>

@@ -1,46 +1,62 @@
 import { Card, CardBody, CardTitle } from 'reactstrap';
-import productImg from '../../assets/img/shop/product-list/product-38.png'
-import StarRating from '../star-rating';
+import productImg from '../../assets/img/product-38.png';
 import DiscountPrice from "../discount-price";
-import CustomImage from '../ui/custom-image';
 import RegularPrice from "../regular-price";
+import StarRating from '../star-rating';
+import CustomImage from '../ui/custom-image';
 
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { useStoreActions } from 'easy-peasy';
+import { useRouter } from 'next/navigation';
+import { shortText } from '../../helper';
 import CustomButton from '../ui/custom-button';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-import CustomHeading from './../ui/custom-heading';
 import CustomSubHeading from '../ui/custom-sub-heading';
+import CustomHeading from './../ui/custom-heading';
 
 
 
-const ProductCard = ({src,id}) => {
+const ProductCard = (props) => {
+    const { image, _id, discount, title, price, subName } = props
+    const route = useRouter()
+    const createCart = useStoreActions(action => action.cart.create)
+
+    const addToCartHandler = () => {
+        createCart({
+            ...props,
+            quantity: 1,
+        })
+        // route.push('/cart')
+    }
     return (
         <div id="product-card" className="my-3">
             <Card className="pdt-card">
                 <CustomImage
-                    src={src?src:productImg}
+                    src={image ? image : productImg}
                     classes={`product-img`}
-                    actionLink={`/shops/${id}`}
+                    actionLink={`/shops/${_id}`}
                 />
                 <CardBody>
                     <CardTitle>
                         <CustomSubHeading
-                            subName="Head Phone"
+                            subName={subName ? subName : ''}
                         />
                     </CardTitle>
                     <CustomHeading
-                        actionLink={`/shops/${id}`}
+                        actionLink={`/shops/${_id}`}
                         classes={`heading`}
-                        hedName="Smart Digital Watch"
+                        hedName={title ? shortText(title, 20) : ''}
                     />
                     <div className="d-flex align-items-center justify-content-between mb-3">
                         <div className="d-flex align-items-center">
-                            <RegularPrice regularPrice={`$223`} />
+                            <RegularPrice
+                                classes={" "}
+                                regularPrice={discount} />
                             <DiscountPrice
-                                className={`ps-3 mb-0`}
-                                dicPrice={`$333`} />
+                                classes={`ps-2 mb-0`}
+                                dicPrice={price} />
                         </div>
                         <div>
-                            <StarRating rating='(95%)' />
+                            <StarRating />
                         </div>
                     </div>
                     <CustomButton
@@ -48,6 +64,7 @@ const ProductCard = ({src,id}) => {
                         btnText="Add to cart"
                         size='full'
                         classes={`button`}
+                        btnAction={addToCartHandler}
                     />
                 </CardBody>
             </Card>

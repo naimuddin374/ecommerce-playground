@@ -1,8 +1,19 @@
 #product-gallery {
+    .sub-img{
+            img{
+                cursor:pointer;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+    }
     .main-pdt {
-        width: 100%;
-        height: auto;
-        padding: 80px;
+            img{
+                cursor:default;
+                width: 100%;
+                height: auto;
+                padding: 50px;
+            }
     }
 
     p {

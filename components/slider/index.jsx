@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
-import sliderImgA from "../../assets/img/banner-mockup 1.png"
+import sliderImgA from "../../assets/img/banner-mockup 1.png";
 import StarReating from '../star-rating';
+import CustomImage from '../ui/custom-image';
 
 function Slidr() {
   const settings = {
@@ -40,7 +40,10 @@ function Slidr() {
                 </div>
               </div>
               <div className="col-6">
-                <Image className="w-100" src={sliderImgA} />
+                <CustomImage
+                  classes={"w-100 h-auto"}
+                  src={sliderImgA.src}
+                />
               </div>
             </div>
             <div className="circleArea">
@@ -71,7 +74,10 @@ function Slidr() {
                 </div>
               </div>
               <div className="col-6">
-                <Image className="w-100" src={sliderImgA} />
+                <CustomImage
+                  src={sliderImgA.src}
+                  classes={"w-100 h-auto"}
+                />
               </div>
             </div>
             <div className="circleArea">
@@ -102,7 +108,10 @@ function Slidr() {
                 </div>
               </div>
               <div className="col-6">
-                <Image className="w-100" src={sliderImgA} />
+                <CustomImage
+                  src={sliderImgA.src}
+                  classes={"w-100 h-auto"}
+                />
               </div>
             </div>
             <div className="circleArea">

@@ -1,9 +1,9 @@
+import { faSearch, } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 import { useState } from 'react'
 import { Input } from 'reactstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, } from '@fortawesome/free-solid-svg-icons'
 import useData from '../../hooks/useData'
-import Link from 'next/link'
 
 
 const FilterCategory = () => {
@@ -26,7 +26,7 @@ const FilterCategory = () => {
     return (
         <div className="accordion">
             {loading ? <h1>Loading...</h1> :
-                categories.length > 0 && categories.map((cat, index) =>
+                categories?.length > 0 && categories?.map((cat, index) =>
                     <div className="accordion-item" key={cat._id}>
                         <div className={open === index ? "accordion-header active" : "accordion-header"} onClick={() => setOpen(index)}>
                             <button className="accordion-button shadow-none">

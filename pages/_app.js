@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
-import Layout from "../components/layout";
-import { StoreProvider } from "easy-peasy";
-import store from "../store";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { StoreProvider } from "easy-peasy";
+import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import Layout from "../components/layout";
+import store from "../store";
 import "../styles/style.scss";
 
 function MyApp({ Component, pageProps }) {
@@ -19,6 +21,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <StoreProvider store={store}>
       <Layout>
+        <ToastContainer
+          position="bottom-left"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          rtl={false}
+          pauseOnHover
+        />
         <Component {...pageProps} />
       </Layout>
     </StoreProvider>

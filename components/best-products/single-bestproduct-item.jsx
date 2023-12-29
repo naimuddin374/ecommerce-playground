@@ -1,10 +1,10 @@
 
 
-const SingleBestproductItem = ({imgSrc,}) =>{
-    return(
+const SingleBestproductItem = ({ imgSrc, }) => {
+    return (
         <div className="BestProducts card" id="BestProducts">
             <div className="imgArea">
-                <a href="#"><Image className="w-100 h-auto" src={BestProductsImgC} /></a>
+                <a href="#"><Image className="w-100 h-auto" src={BestProductsImgC.src} /></a>
             </div>
             <div className="card-body">
                 <p className="mb-0">Head Phone</p>

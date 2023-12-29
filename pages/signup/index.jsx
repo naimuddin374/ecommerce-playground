@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import Breadcrumb from "../../components/breadcrumb";
+import CustomButton from "../../components/ui/custom-button";
 import CustomInput from "../../components/ui/custom-input";
-import CustomButton from "../../components/ui/custom-button"
 import useAuth from "../../hooks/useAuth";
 
 
@@ -78,15 +78,15 @@ const SignUp = () => {
               <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described inour privacy policy.</p>
             </div>
             <div className="pt-3">
-              <CustomButton classes={'sign'} type="submit" btnText="Sign Up" />
+              <CustomButton classes={'signin'} type="submit" btnText="Sign Up" />
             </div>
             <div className="account text-center pt-5">
               <h4>Don't have an account? </h4>
             </div>
             <div className="pt-3">
               <Link href="/signin">
-                  <CustomButton  classes={'white-outline-btn'} type="submit" btnText="Sign In" />
-              </Link> 
+                <CustomButton classes={'white-outline-btn'} btnText="Sign In" />
+              </Link>
             </div>
           </form>
         </div>

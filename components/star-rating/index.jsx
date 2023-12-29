@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactStars from 'react-stars'
+import ReactStars from 'react-stars';
 
 const StarRating = (props) => {
     return (
@@ -9,9 +9,6 @@ const StarRating = (props) => {
                     count={5}
                     size={18}
                     color2={'#ffd700'} />
-            </div>
-            <div className='ps-1 mt-0'>
-                <p className="mb-0">{props.rating}</p>
             </div>
         </div>
     )

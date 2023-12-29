@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
 import { useStoreActions, useStoreState } from "easy-peasy";
-import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import api from "../service";
-import jwtDecode from "jwt-decode";
 
 // "/categories"
-const useData = (baseurl) => {
+const useData = (baseurl = '/') => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -25,16 +23,31 @@ const useData = (baseurl) => {
     try {
       const response = await api.get(customUrl);
       dataActions.setData({
-        key: customUrl,
-        value: response.data.data,
+        key: customUrl.split('?')[0],
+        value: response.data.payload,
       });
     } catch (error) {
-      setError(error.response.data.message);
+      setError(error.response);
       console.log("error", error);
     } finally {
       setLoading(false);
     }
   };
+
+  const getDetails = (url) => {
+    try {
+      url = url.split('/')
+      const key = `/${url[1]}`
+      const dataId = url[2]
+      const data = dataState[key].data
+      if (!data || data.length === 0) return null
+      const findData = data?.find(item => item._id === dataId)
+      if (!findData) return null
+      return findData
+    } catch (error) {
+      return null
+    }
+  }
 
   useEffect(() => {
     if (!dataState[baseurl]) {
@@ -44,7 +57,8 @@ const useData = (baseurl) => {
 
   return {
     loading,
-    data: dataState[baseurl],
+    data: dataState[baseurl.split('?')[0]],
+    getDetails,
     error,
   };
 };

@@ -1,14 +1,12 @@
-import ModelManuItem from "./modal-menu-item";
-import ModelManuItemImgA from "../../../../assets/img/product-40 1.png"
-import useData from "../../../../hooks/useData";
 import Link from "next/link";
-import Image from 'next/image';
-
+import { shortText } from "../../../../helper";
+import useData from "../../../../hooks/useData";
+import ModelManuItem from "./modal-menu-item";
 
 const Category = () => {
-    const { loading, data } = useData('/categories');
+    const { loading, data: category } = useData('/categories');
+    const catData = category?.data
 
-    console.log('Category', data)
 
     if (loading) {
         return (
@@ -23,14 +21,12 @@ const Category = () => {
     return (
         <Link href="#" className="modal-area">
             <div className='row p-4'>
-                {data && data.length > 0 && data.map(row =>
+                {catData && catData.length > 0 && catData.map(row =>
                     <div className='col-4 text-center' key={row._id}>
-                        {/* <ModelManuItem
-                            img={row.category.image}
-                            title={row.name}
-                        /> */}
-                        <Image width={500} height={500} src={row.image} />
-                        {/* <p>{row.image}</p> */}
+                        <ModelManuItem
+                            img={row.image}
+                            title={shortText(row.name, 15)}
+                        />
                     </div>)}
             </div>
         </Link>

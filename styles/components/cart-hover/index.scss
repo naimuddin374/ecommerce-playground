@@ -1,0 +1,43 @@
+.cartHover{
+   padding: 20px;
+   background-color: white;
+   color:black;
+   width: 400px;
+   line-height: 20px;
+   text-align: left;
+   box-shadow: 1px 1px 8px rgba(0,0,0,0.25);
+   left: -188px;
+   top:52px;
+   padding-right: 2px;
+   
+   .cart-img-list{
+      img{
+         width: 40px;
+         height: auto;
+      }
+   }
+   .cart-hadding{
+      font-size: 14px;
+      
+   }
+   .cartPrice{
+      padding-left: 0px;
+   }
+   .icon{
+      color:red;
+      font-size: 10px;
+   }
+   .checkoutBtn{
+      float: right;
+      margin-top: 4px;
+      background-color: #3C1FF4;
+      height: 36px;
+      border: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      border-radius: 2px;
+      margin-right: 15px;
+      margin-top: 15px;
+   }
+}

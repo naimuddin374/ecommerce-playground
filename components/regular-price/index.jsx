@@ -1,6 +1,7 @@
-const RegularPrice = ({ regularPrice, className }) => {
+const RegularPrice = ({ regularPrice, classes }) => {
     return (
-        <div className={className}>
+        <div className={classes}>
+            <strong>৳</strong>
             <strong>{regularPrice}</strong>
         </div>
     )

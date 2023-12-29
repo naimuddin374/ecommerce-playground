@@ -1,21 +1,62 @@
-import StarRating from '../star-rating/index';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShareNodes, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faHeart, faShareNodes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useStoreActions } from 'easy-peasy';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import useData from '../../hooks/useData';
+import DiscountPrice from '../discount-price';
 import ProductGallery from '../product-gallery';
-import Link from 'next/link'
-import CustomInput from './../ui/custom-input';
-const ProductContent = () => {
+import RegularPrice from '../regular-price';
+import StarRating from '../star-rating/index';
+import CustomButton from '../ui/custom-button';
+import CustomHeading from '../ui/custom-heading';
+import CustomInput from '../ui/custom-input';
+
+const ProductContent = ({ id }) => {
+    const [quantity, setQuantity] = useState(0)
+
+    const { getDetails } = useData(`/produts`)
+    const pdtDetails = getDetails(`/products/${id}`)
+    const createCart = useStoreActions(action => action.cart.create)
+    const route = useRouter()
+
+    const addToCartHandler = () => {
+        if (quantity < 1 || quantity > 20) {
+            toast.error('Provied a valid Quntity!')
+            return;
+        }
+        const obj = { ...pdtDetails, quantity }
+        console.log('adTocart=', obj)
+        createCart(obj)
+        route.push('/cart')
+
+
+    }
+
+    const changeHandler = (e) => {
+        if (e.target.value < 1 || e.target.value > 20) {
+            toast.error('Provied a valid Quntity!')
+        } else {
+            setQuantity(e.target.value)
+        }
+
+    }
+
     return (
         <div id="pdt-content">
+
             <div className="row">
                 <div className="col-7">
-                    <ProductGallery pdtText={`N.B. Image may differ with actual product's layout, color, size & dimension. No claim will be accepted for image mismatch.`} />
+                    <ProductGallery
+                        images={[pdtDetails?.image]}
+                    />
                 </div>
                 <div className="col-5 ">
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <p className="me-2 mb-0">Review:</p>
-                            <StarRating rating={`(95)`} />
+                            <StarRating />
                         </div>
                         <div >
                             <FontAwesomeIcon className="me-2" icon={faShareNodes} />
@@ -23,9 +64,12 @@ const ProductContent = () => {
                         </div>
                     </div>
                     <div className="pdt-info">
-                        <h4>Flexible WareLess Head Phone</h4>
-                        <p>Product Id:<span className="text-muted">12af</span></p>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</p>
+                        <CustomHeading
+                            classes={"h4 text-dark text-decoration-none"}
+                            hedName={pdtDetails?.title}
+                        />
+                        <p>Product Id:<span className="text-muted"> {pdtDetails?._id} </span></p>
+                        <p>{pdtDetails?.description}</p>
                         <p>Brand:<span className="text-muted">HP</span></p>
                         <h5>Quick Overview</h5>
                         <div>
@@ -36,11 +80,15 @@ const ProductContent = () => {
                                 <li className="m-0">Display Size(Inch) - 13.3</li>
                             </ul>
                         </div>
-                        <div className="price">
-                            <span className="h4 me-4" strong>$333</span>
-                            <span className='me-4 text-muted'>|</span>
-                            <span className="h4 text-muted text-decoration-line-through">$232</span>
-                            <span className="less-price">-11%</span>
+                        <div className="price d-flex align-items-center">
+                            <RegularPrice
+                                classes={"h4 me-3 "}
+                                regularPrice={pdtDetails?.price}
+                            />
+                            <DiscountPrice
+                                classes={'text-muted mb-0'}
+                                dicPrice={pdtDetails?.discount}
+                            />
                         </div>
 
                         <div className=" quantity row align-items-center ">
@@ -48,12 +96,21 @@ const ProductContent = () => {
                                 <CustomInput
                                     classes="shadow-none"
                                     type="number"
-                                    placeholder="2"
+                                    name={quantity}
+                                    value={quantity}
+                                    changeHandler={changeHandler}
                                 />
                             </div>
-                            <Link href='' className="add-to-cart col-6 ms-2 text-center btn ">
-                                <FontAwesomeIcon icon={faShoppingCart} className="me-2" />
-                                add to card</Link>
+                            <div className="col-9">
+                                <CustomButton
+                                    size={'full'}
+                                    btnAction={addToCartHandler}
+                                    btnText={"Add To Cart"}
+                                    btnIcon={faCartShopping}
+                                    type={'btn'}
+                                    classes={'add-to-cart'}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

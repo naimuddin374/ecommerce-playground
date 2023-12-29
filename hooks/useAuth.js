@@ -1,8 +1,8 @@
-import { useStoreActions, useStoreState } from "easy-peasy";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
-import api from "../service";
+import { useStoreActions } from "easy-peasy";
 import jwtDecode from "jwt-decode";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import api from "../service";
 
 const useAuth = () => {
   const [loading, setLoading] = useState(false);
@@ -44,7 +44,9 @@ const useAuth = () => {
         // contact: '01754540123'
       };
       const response = await api.post("/auth/login", formData);
-      const token = response.data.data;
+      console.log("response", response.data);
+
+      const token = response.data;
       const user = jwtDecode(token);
       authActions.login({
         user,
@@ -52,8 +54,8 @@ const useAuth = () => {
       });
       router.push("/");
     } catch (error) {
-      setError(error.response.data.message);
-      console.log("error", error);
+      // setError(error.response.data.message);
+      console.log("error", error.message);
     } finally {
       setLoading(false);
     }

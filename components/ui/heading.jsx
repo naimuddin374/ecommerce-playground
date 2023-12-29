@@ -1,4 +1,4 @@
-const Heading = (props)=>{
+const Heading = (props) => {
     return (
         <h1 className={props.className}>{props.Heading}</h1>
     )

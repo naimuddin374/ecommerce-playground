@@ -1,6 +1,9 @@
-const DiscountPrice = (props) => {
+const DiscountPrice = ({ classes, dicPrice }) => {
     return (
-        <p className={`text-decoration-line-through text-muted ${props.className}`}>{props.dicPrice}</p>
+        <div>
+
+            <p className={`text-decoration-line-through text-muted ${classes}`}> <span>৳</span>{dicPrice}</p>
+        </div>
     )
 }
 export default DiscountPrice
